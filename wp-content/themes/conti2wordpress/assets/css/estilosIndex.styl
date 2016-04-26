@@ -1,0 +1,2170 @@
+@import "nib"
+// @import "fontMenu.styl"
+@import "redes.styl"
+
+@font-face
+	font-family Avenir
+	src url(../fonts/AvenirLTStd-Medium.otf)
+@font-face
+	font-family Avenir Heavy
+	src url(../fonts/AvenirLTStd-Heavy.otf)
+@font-face
+	font-family Avenir light
+	src url(../fonts/AvenirLTStd-Light.otf)
+@font-face
+	font-family Avenir Roman
+	src url(../fonts/AvenirLTStd-Roman.otf)
+	
+
+body
+	background url("../imagenes/fondoBody.png")
+	background-size 700px
+	// font-family Verdana
+	font-size 14px
+	font-family Avenir
+.header
+	// background url("../imagenes/fondoHeader.png")
+	// background-size 100%
+	// background-repeat no-repeat
+	position relative
+	background-color white
+	&__menu
+		display none
+		position absolute
+		&__btn-menu
+			text-decoration none
+			color #2094e4
+			font-size 2rem
+			
+	&-logoResponsive
+		display none
+	&-contenedor
+		max-width 980px
+		// border 1px dotted red
+		margin-left auto
+		margin-right auto
+		// display flex
+		// padding-top 20px
+		// padding-bottom 20px
+		&-raw1
+			// width 30%
+			display flex
+			&_logo
+				margin -15px 0 0 0
+				width 70%
+				&_img
+					width 25%
+			&_redes
+				// border 1px dotted
+				&_lista
+					margin-top 27px
+					// margin-left -40px
+					&_items
+						display inline-block
+						list-style none
+						&_icon
+							text-decoration none
+							display block
+							padding 10px
+							img
+								width 37px
+.menu
+	height 40px
+	width 100%
+	margin-left auto
+	margin-right auto
+	background #3399ff
+	text-align center
+	&_lista
+		// list-style none
+		// text-align right
+		// margin-top 60px
+		margin 0
+		&_items
+			display inline-block
+			// margin-right 15px
+			position relative
+			list-style none
+			// margin-top 14px
+			&_link
+				text-transform uppercase
+				text-decoration none
+				color white
+				font-size 14px
+				display block
+				padding 11px 15px
+				transition 3s ease-out
+			&:hover
+				background #525252
+				transition .7s
+		&_items .children1
+			display none
+			position absolute
+			background #0080e0
+			padding 0
+			width 170%
+			z-index 1000
+			// height 100%
+			// margin-top 10px
+			.submenu2
+				.icon-chevron-down
+					margin-left 20px
+				.children2
+					display none
+					position absolute
+					padding 0
+					z-index 1000
+					background #00ace7
+					li
+						a
+							margin-left 20px
+			.submenu2:hover .children2
+				display block
+				position relative		
+		&_items .children1 li
+			list-style none
+			display block
+			overflow hidden
+			// border-bottom 1px solid rgba(255,255,255,.5)
+			// padding 5px
+		&_items .children1 li a
+			text-decoration none
+			color white
+			display block
+			padding 10px
+			text-align left
+		&_items:hover .children1
+			display block
+			
+// Section Index
+.sectionIndex
+	max-width 980px
+	// border 1px dotted red
+	margin-right auto
+	margin-left auto
+	margin-top 30px
+	display flex
+	flex-wrap wrap
+	margin-bottom 20px
+	&-titulo
+		width 40%
+		color #3399cc
+		&_cont
+			margin-top 18%
+			margin-left 48px
+			font-family Avenir Heavy
+	&-video
+		width 60%
+		position relative
+		&-contenedor
+			width 100%
+			margin 0 auto
+			&_img
+				width 100%	
+		&_caja
+			position absolute
+			width 74.2%
+			top 8.15%
+			left 13.6%
+			&_youtube
+				// width 80%
+				// border 1px dotted red
+				position relative
+				padding-bottom 56.25%
+				iframe
+					width 100%
+					height 100%
+					position absolute
+				// oveflow hidden
+	&-enlaces
+		width 40%
+		// margin-top 10px
+		display flex
+		// border 1px dotted blue
+		flex-wrap wrap
+		&_joven
+			width 100%
+			// border 1px dotted blue
+			&_contenedor
+				margin 0 auto
+				width 80%
+				&_img
+					width 100%
+		&_carreras
+			width 100%
+			// border 1px dotted black
+			// margin-top 75px
+			display flex
+			flex-wrap wrap
+			&_contenedor
+				width 50%
+				margin 0 auto
+				&_link
+					display block
+					&_img
+						width 95%
+	&-cont
+		width 60%
+		&-formulario
+			background #4d4d4d
+			width 90%
+			margin-right auto
+			margin-left auto
+			font-family Avenir light
+			margin-top 20px
+			display flex
+			flex-wrap wrap
+			padding-bottom 45px
+			position relative
+			&__tituloContenedor
+				// border 1px solid
+				margin-top 10px
+				margin-left 30px
+				width 100%
+				// color white
+				&__titulo
+					margin 0
+					color white
+					padding 10px 0 20px 0
+					font-size 14px
+					// font-weight 200
+			&__bloque1,
+			&__bloque2
+				width 50%
+				font-size 8.97px
+				&__input
+					border none
+					border-radius 8px
+					display block
+					margin-left 10%
+					margin-bottom 10px
+					padding 10px
+					width 75%
+			&__bloque3
+				width 100%
+				margin-bottom 15px
+				font-size 8.97px
+				&__textarea
+					border-radius 8px
+					border none
+					display block
+					margin-left 5%
+					width 88%
+					padding-top 10px
+					padding-left 10px
+			&__btn
+				// margin-left 82%
+				border none
+				padding 10px 20px 10px 20px
+				display block
+				background #007de3
+				color white
+				border-radius 10px
+				font-size 13px
+				bottom 10px
+				right 20px
+				position absolute
+	
+// Section Admisión
+.sectionAdmision
+	margin-bottom 80px
+	&-logoAdmision
+		width 18%
+		margin 0 auto
+		&__img
+			width 100%
+			display block 
+	&-bloque
+		width 65%
+		margin-left auto
+		margin-right auto
+		&__logo
+			width 20%
+			margin 0
+			&__img
+				width 100%
+				display block
+		&__parrafo
+			width 93%
+			margin 40px auto 20px auto
+			
+// Section Agenda
+.sectionAgenda
+	&-agendaLogo
+		width 18%
+		margin 0 auto
+		&__img
+			width 100%
+			display block
+	&-calendarioLogo
+		width 22%
+		margin 0 auto
+		&__img
+			width 100%
+			display block
+	
+	&-Calendario
+		// border 2px dotted red
+		margin 0 auto 50px auto
+		width 70%
+		border 10px solid #00abea
+		background-color white
+		#mini-clndr
+			font-family Asap, Helvetica, Arial
+			margin 30px auto
+			width 90%
+			// box-shadow 4px 4px 0 #343434
+			.clndr
+				overflow hidden
+				border-bottom 7px solid #9f9f9f
+				.controls
+					background-color #f6f6f6
+					color #9f9f9f
+					.month
+						width 80%
+						padding-top 5px
+						padding-bottom 5px
+						display inline-block
+						text-align center
+						text-transform uppercase
+						font-weight 700
+						letter-spacing 1px
+				.days-container
+					position relative
+					width 100%
+					height 204px
+					display inline-block
+					.days
+						position absolute
+						left 0
+						width 100%
+						// height 100%
+						transition left .5s
+						background-color #ebebeb
+						display flex
+						flex-wrap wrap
+						.empty
+							height 31px
+							vertical-align bottom
+						.headers
+							background-color #9f9f9f
+							padding-top 5px
+							padding-bottom 5px
+							width 100%
+							.day-header
+								width 14.2857%
+								display inline-block
+								text-align center
+								color white
+					.events
+						position absolute
+						left 100%
+						width 100%
+						height 186px
+						transition left .5s
+						background-color #ebebeb
+						.headers
+							position relative
+						.event-header
+							width 100%
+							background-color #97ce7f
+							padding-top 5px
+							padding-bottom 5px
+							text-align center
+							color white
+						.x-button
+							position absolute
+							font-size 80%
+							top 7px
+							left 20px
+							cursor pointer
+							transition color .25s
+							&:hover
+								color white
+						.events-list
+							overflow scroll
+							height 155px
+							.event
+								padding-top 8px
+								padding-bottom 8px
+								padding-left 10px
+								border-bottom 1px solid rgba(255,255,255,0.5)
+								transition background-color .25s
+								&:hover
+									background-color #f5f5f5
+								a
+									position relative
+									font-size 12px
+									letter-spacing 1px
+									background-color transparent
+									color #212121
+									text-decoration none
+									transition color .25s
+									&:hover
+										background-color transparent
+										color #69a776
+					&.show-events
+						.days
+							left -100%
+						.events
+							left 0
+		// botones siguiente anterior del mes
+		#mini-clndr .clndr .controls .clndr-previous-button,
+		#mini-clndr .clndr .controls .clndr-next-button
+			width 10%
+			padding-top 5px
+			padding-bottom 5px
+			display inline-block
+			text-align center
+			cursor pointer
+			-webkit-user-select none
+			-moz-user-select none
+			-ms-user-select none
+			transition background-color .5s
+		#mini-clndr .clndr .controls .clndr-previous-button:hover,
+		#mini-clndr .clndr .controls .clndr-next-button:hover
+			background-color #cbc7c7
+		// dias
+		#mini-clndr .clndr .days-container .days .day,
+		#mini-clndr .clndr .days-container .days .empty
+			width 14.2857%
+			display inline-block
+			padding-top 8px
+			padding-bottom 8px
+			font-size 12px
+			text-align center
+			color #212121
+			// border-right 1px solid rgba(255,255,255,0.5)
+			// border-bottom 1px solid rgba(255,255,255,0.5)
+		
+		#mini-clndr .clndr .days-container .days .day.event,
+		#mini-clndr .clndr .days-container .days .empty.event
+			background-color #d2d2d2
+			transition background-color .5s
+			cursor pointer
+		#mini-clndr .clndr .days-container .days .day.event:hover,
+		#mini-clndr .clndr .days-container .days .empty.event:hover
+			background-color #b8b8b8
+		#mini-clndr .clndr .days-container .days .day.adjacent-month,
+		#mini-clndr .clndr .days-container .days .empty.adjacent-month
+			color rgba(0,0,0,.3)
+			
+// Section Contacto Instituto
+.sectionContactoInsti
+	width 70%
+	margin-right auto
+	margin-left auto
+	margin-top 30px
+	margin-bottom 50px
+	&-logoInsti
+		width 25%
+		margin-left auto
+		margin-right auto
+		margin-top 70px
+		margin-bottom 0
+		&__img
+			width 100%
+	&-logoVisita
+		width 50%
+		margin-left auto
+		margin-right auto
+		margin-top 50px
+		margin-bottom 0
+		&__img
+			width 100%
+	&-parrafoTop
+		font-family Verdana
+		font-size 200
+		margin-top 60px
+	&-logoFormulario
+		width 55%
+		margin-left auto
+		margin-right auto
+		margin-top 50px
+		margin-bottom 0
+		&__img
+			width 100%
+			display block
+	&-formulario
+		background #64cff1
+		width 90%
+		margin-right auto
+		margin-left auto
+		font-family Verdana
+		margin-top 50px
+		display flex
+		flex-wrap wrap
+		padding-bottom 45px
+		position relative
+		&__tituloContenedor
+			// border 1px solid
+			margin-top 10px
+			margin-left 30px
+			width 100%
+			&__titulo
+				margin 0
+				color #454545
+				padding 35px 0 20px 30px
+				// font-size 1rem
+				font-size 1.4rem
+				font-weight 500
+		&__bloque1,
+		&__bloque2
+			width 50%
+			&__input
+				border none
+				display block
+				margin-left 10%
+				margin-bottom 15px
+				padding 10px
+				width 75%
+		&__bloque3
+			width 100%
+			margin-bottom 25px
+			&__textarea
+				border none
+				display block
+				margin-left 5%
+				width 88%
+				padding-top 10px
+				padding-left 10px
+		&__btn
+			// margin-left 82%
+			border none
+			padding 10px 20px 10px 20px
+			display block
+			background #007de3
+			color white
+			border-radius 10px
+			font-size 1.3rem
+			bottom 10px
+			right 20px
+			position absolute
+// Section Contacto Universidad
+.sectionContactoUni
+	width 70%
+	margin-right auto
+	margin-left auto
+	margin-top 30px
+	margin-bottom 50px
+	&-logoUni
+		width 25%
+		margin-left auto
+		margin-right auto
+		margin-top 70px
+		margin-bottom 0
+		&__img
+			width 100%
+	&-logoVisita
+		width 50%
+		margin-left auto
+		margin-right auto
+		margin-top 50px
+		margin-bottom 0
+		&__img
+			width 100%
+	&-parrafoTop
+		font-family Verdana
+		font-size 200
+		margin-top 60px
+	&-logoFormulario
+		width 55%
+		margin-left auto
+		margin-right auto
+		margin-top 50px
+		margin-bottom 0
+		&__img
+			width 100%
+			display block
+	&-formulario
+		background #64cff1
+		width 90%
+		margin-right auto
+		margin-left auto
+		font-family Verdana
+		margin-top 50px
+		display flex
+		flex-wrap wrap
+		padding-bottom 45px
+		position relative
+		&__tituloContenedor
+			// border 1px solid
+			margin-top 10px
+			margin-left 30px
+			width 100%
+			&__titulo
+				margin 0
+				color #454545
+				padding 35px 0 20px 30px
+				// font-size 1rem
+				font-size 1.4rem
+				font-weight 500
+		&__bloque1,
+		&__bloque2
+			width 50%
+			&__input
+				border none
+				display block
+				margin-left 10%
+				margin-bottom 15px
+				padding 10px
+				width 75%
+		&__bloque3
+			width 100%
+			margin-bottom 25px
+			&__textarea
+				border none
+				display block
+				margin-left 5%
+				width 88%
+				padding-top 10px
+				padding-left 10px
+		&__btn
+			// margin-left 82%
+			border none
+			padding 10px 20px 10px 20px
+			display block
+			background #007de3
+			color white
+			border-radius 10px
+			font-size 1.3rem
+			bottom 10px
+			right 20px
+			position absolute
+
+// Section Instituto
+.sectionInstituto
+	width 70%
+	// border 1px dotted red
+	margin-right auto
+	margin-left auto
+	margin-top 30px
+	margin-bottom 50px
+	&-logo
+		width 25%
+		margin-left auto
+		margin-right auto
+		&__img
+			width 100%
+	&-parrafoTop
+		font-family Verdana
+		font-size 200
+	
+	//cajas carreras
+	&-carreras
+		&__logoTop
+			display none
+		&__escuelaDiseno,
+		&__escuelaTecnologia,
+		&__escuelaNegocios,
+		&__escuelaGastronomia
+			color white
+			font-family Verdana
+			&__enlacesCarreras
+				// transition 0.7s
+				display none
+				width 100%
+				padding 10px 10px 35px 10px
+				// transition 2s
+				&__link
+					display block
+					text-decoration none
+					color white
+					margin-left 45%
+					padding 5px
+			&__boton
+				position absolute
+				text-decoration none
+				border-radius 10px
+				background-color #0091E3
+				display block
+				color white
+				padding 10px
+				// top 84%
+				bottom -15px
+				right 3%
+		&__escuelaDiseno
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 60px
+			position relative
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				// bottom 10px
+				top -55px
+				left 5%
+				&__img
+					width 100%
+					display block
+								
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block
+			
+		&__escuelaTecnologia
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 82px
+			position relative
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				// bottom 10px
+				top -75px
+				left 5%
+				&__img
+					width 100%
+					display block
+					
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block
+				
+		&__escuelaNegocios
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 82px
+			position relative
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				left 5%
+				// bottom 0
+				top -65px
+				&__img
+					width 100%
+					display block
+					
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block
+		
+		&__escuelaGastronomia
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 82px
+			position relative
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				// bottom 0
+				top -70px
+				left 5%
+				&__img
+					width 100%
+					display block
+					
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block
+		
+				
+
+// Section Universidad
+.sectionUniversidad
+	width 70%
+	// border 1px dotted red
+	margin-right auto
+	margin-left auto
+	margin-top 30px
+	margin-bottom 50px
+	&-logo
+		width 25%
+		margin-left auto
+		margin-right auto
+		&__img
+			width 100%
+	&-parrafoTop
+		font-family Verdana
+		font-size 200
+	
+	//cajas carreras
+	&-carreras
+		&__logoTop
+			display none
+		&__ingenieria,
+		&__cienciasEmpresa,
+		&__cienciasSalud,
+		&__humanidades,
+		&__derecho
+			color white
+			font-family Verdana
+			&__enlacesCarreras
+				display none
+				width 100%
+				padding 10px 10px 35px 10px
+				// display flex
+				// flex-wrap wrap
+				&__contenedor
+					display flex
+					flex-wrap wrap
+					&__column
+						&__link
+							display block
+							text-decoration none
+							color white
+							// margin-left 45%
+							padding 7px
+							font-size .8rem
+			&__boton
+				position absolute
+				text-decoration none
+				border-radius 10px
+				background-color #0091E3
+				display block
+				color white
+				padding 10px
+				bottom -15px
+				right 3%
+		&__ingenieria
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 60px
+			position relative
+			&__enlacesCarreras
+				margin-left 20%
+				&__contenedor
+					&__column
+						width 33%
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				top -50px
+				&__img
+					width 100%
+					display block
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block		
+		&__cienciasEmpresa
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 60px
+			position relative
+			&__enlacesCarreras
+				margin-left 45%
+				&__contenedor
+					&__column
+						width 50%
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				top -50px
+				left 5%
+				&__img
+					width 100%
+					display block
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block
+
+		&__cienciasSalud
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 60px
+			position relative
+			&__enlacesCarreras
+				margin-left 45%
+				&__contenedor
+					&__column
+						width 50%
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				top -50px
+				&__img
+					width 100%
+					display block
+					
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block
+		&__humanidades
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 60px
+			position relative
+			&__enlacesCarreras
+				margin-left 45%
+				&__contenedor
+					&__column
+						width 100%
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				top -50px
+				&__img
+					width 100%
+					display block
+					
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block
+		&__derecho
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 60px
+			position relative
+			&__enlacesCarreras
+				margin-left 45%
+				&__column
+					width 100%
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				top -50px
+				&__img
+					width 100%
+					display block
+					
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block
+.sectionUniversidadArequipa
+	width 70%
+	// border 1px dotted red
+	margin-right auto
+	margin-left auto
+	margin-top 30px
+	margin-bottom 50px
+	&-logo
+		width 25%
+		margin-left auto
+		margin-right auto
+		&__img
+			width 100%
+	&-parrafoTop
+		font-family Verdana
+		font-size 200
+	
+	//cajas carreras
+	&-carreras
+		&__logoTop
+			display none
+		&__ingenieria,
+		&__cienciasEmpresa,
+		&__cienciasSalud,
+		&__humanidades,
+		&__derecho
+			color white
+			font-family Verdana
+			&__enlacesCarreras
+				display none
+				width 100%
+				padding 10px 10px 35px 10px
+				&__contenedor
+					display flex
+					flex-wrap wrap
+					&__column
+						&__link
+							display block
+							text-decoration none
+							color white
+							// margin-left 45%
+							padding 7px
+							font-size .8rem
+			&__boton
+				position absolute
+				text-decoration none
+				border-radius 10px
+				background-color #0091E3
+				display block
+				color white
+				padding 10px
+				bottom -15px
+				right 3%
+		&__ingenieria
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 60px
+			position relative
+			&__enlacesCarreras
+				margin-left 45%
+				&__contenedor
+					&__column
+						width 50%
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				top -50px
+				&__img
+					width 100%
+					display block
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block		
+		&__cienciasEmpresa
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 60px
+			position relative
+			&__enlacesCarreras
+				margin-left 45%
+				&__contenedor
+					&__column
+						width 50%
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				top -50px
+				left 5%
+				&__img
+					width 100%
+					display block
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block
+
+		&__humanidades
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 60px
+			position relative
+			&__enlacesCarreras
+				margin-left 45%
+				&__contenedor
+					&__column
+						width 100%
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				top -50px
+				&__img
+					width 100%
+					display block
+					
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block
+		&__derecho
+			background-color #575757
+			display flex
+			flex-wrap wrap
+			margin-top 60px
+			position relative
+			&__enlacesCarreras
+				margin-left 45%
+				&__contenedor
+					&__column
+						width 100%
+			&__logo
+				position absolute
+				// border 1px dotted blue
+				width 30%
+				margin 0
+				top -50px
+				&__img
+					width 100%
+					display block
+					
+			&__frames
+				// border 1px dotted red
+				width 50%
+				display flex
+				// margin-top 4%
+				margin-right 4%
+				margin-left auto
+				// margin-bottom 4%
+				&__contenedor
+					width 32%
+					margin 32px 10px 32px 0
+					&__img
+						width 100%
+						display block
+.sectionCarrerasInfo
+	max-width 980px
+	margin-left auto
+	margin-right auto
+	// font-family Verdana
+	margin-bottom 50px
+	display flex
+	flex-wrap wrap
+	&-col1
+		width 54.39%
+		&_titulo
+			font-size 39px
+			color #3399cc
+			margin-top 36px
+			margin-bottom 24px
+		&-videoContenedor
+		
+			// width 30%
+			position relative
+			padding-bottom 52.25%
+			padding-top 0px
+			height 0
+			overflow hidden
+			// margin-left 5px
+			margin-right 5px
+			iframe,
+			object,
+			embed,
+			video
+				width 94%
+				height 100%
+				position absolute
+				top 0
+				left 0
+		&-formulario
+			background #33cc99
+			width 93.2%
+			margin-right auto
+			// margin-left auto
+			font-family Avenir Heavy
+			font-size 11px
+			margin-top 62px
+			display flex
+			flex-wrap wrap
+			padding 42px 0
+			position relative
+			border-radius 5px
+			&__tituloContenedor
+				// border 1px solid
+				margin-top 10px
+				margin-left 30px
+				width 100%
+				// color white
+				&__titulo
+					margin 0
+					color white
+					padding 10px 0 20px 0
+					font-size 14px
+					// font-weight 200
+			&__bloque1,
+			&__bloque2
+				width 50%
+				// font-size 10.09px
+				&__input
+					border none
+					border-radius 5px
+					display block
+					margin-left 9.125%
+					margin-bottom 5px
+					padding 8px
+					width 79.93%
+					&::-webkit-input-placeholder
+						color #33cc99
+						// font-family Avenir
+						// font-weight 700
+					&:-moz-placeholder
+						color #33cc99
+					&::-moz-placeholder
+						color #33cc99
+					&:-ms-input-placeholder
+						color #33cc99
+			&__bloque2
+				&__input
+					margin-left 5%			
+						
+			&__bloque3
+				width 100%
+				margin-bottom 15px
+				margin-top 15px
+				// font-size 10.09px
+				
+				&__textarea
+					border-radius 5px
+					border none
+					display block
+					margin-left 5%
+					width 88%
+					padding-top 10px
+					padding-left 10px
+					&::-webkit-input-placeholder
+						color #33cc99
+						// font-family Avenir
+						// font-weight 700
+					&:-moz-placeholder
+						color #33cc99
+					&::-moz-placeholder
+						color #33cc99
+					&:-ms-input-placeholder
+						color #33cc99
+			&__btn
+				// margin-left 82%
+				border none
+				padding 10px 20px 10px 20px
+				display block
+				background #4d4d4d
+				color white
+				border-radius 10px
+				font-size 13px
+				bottom 10px
+				right 20px
+				position absolute
+	&-col2
+		margin-top 68px
+		width 40%
+		&_title
+			color #ff0000
+			font-size 16px
+			font-family Avenir Roman
+		&_parrafo
+			font-family Avenir Light
+			font-size 16px
+			text-align justify
+.sectionDescubreTalentos
+	max-width 980px
+	display flex
+	flex-wrap wrap
+	margin-left auto
+	margin-right auto
+	margin-top 40px
+	margin-bottom 40px
+	&-col1
+		width 40%
+		&_titulo
+			width 100%
+			&_img
+				width 78.32%
+		&_saory
+			width 100%
+			margin-left 65px
+			margin-top 25px
+			&_img
+				width 93.625%
+			
+	&-col2
+		width 50%
+		margin-top 35px
+		&_titulo
+			font-size 25px
+			color #cc3333
+			// margin-right 20px
+			letter-spacing -1px
+			line-height 28px
+		&_parrafo
+			font-size 15px
+			color #333333
+			margin-top 30px
+			text-align justify
+			line-height 21px
+			
+		&_boton
+			text-align center
+			text-decoration none
+			padding 15px 0
+			background-color #3399ff
+			color #ffffff
+			font-size 25.45px
+			border-radius 7px
+			width 238px
+			margin-left auto
+			margin-right auto
+			display block
+			margin-top 85px
+			
+
+.sectionVisitanos
+	width 70%
+	// border 1px dotted red
+	margin-right auto
+	margin-left auto
+	margin-top 40px
+	margin-bottom 50px
+	&-logo
+		width 35%
+		margin-left auto
+		margin-right auto
+		&_img
+			width 100%
+			display block
+				// oveflow hidden
+	&-enlaces
+		// margin-top 10px
+		// display flex
+		&_carreras
+			width 100%
+			// border 1px dotted black
+			margin-top 75px
+			flex-wrap wrap
+			display flex
+			&_contenedor
+				width 44%
+				// margin 0 auto 38px 0
+				margin 0
+				padding 0 3%
+				&_link
+					display block
+					&_img
+						width 100%
+.footer
+	background-color #252526
+	&-sedes
+		// border 1px dotted red
+		max-width 980px
+		margin-right auto
+		margin-left auto
+		// padding-top 15px
+		display flex
+		
+		&-contenedor
+			// width 25%
+			// border 1px dotted blue
+			// justiy-content
+			// margin-right 20px
+			// margin-left 20px
+			font-family Avenir light
+			&:nth-child(odd)
+				width 22%
+			&:nth-child(even)
+				width 28%
+			&_titulo
+				color white
+				font-style 100
+				text-transform uppercase
+				font-size 14px
+				margin-bottom 0
+			&_direccion
+				color #656565
+				font-size 12px
+				color white
+				
+
+
+@media screen and (max-width:1052px)
+	body
+		.header
+			&-contenedor
+				width 90%
+		.sectionIndex
+			width 80%
+		.sectionAdmision
+			&-bloque
+				width 75%
+		.sectionInstituto
+			&-carreras
+				&__escuelaDiseno,
+				&__escuelaTecnologia
+				&__escuelaNegocios,
+				&__escuelaGastronomia
+					&__frames
+						width 55%
+					&__enlacesCarreras
+						&__link
+							margin-left 39.5%
+				&__escuelaDiseno
+					&__logo
+						top -30px
+				&__escuelaTecnologia
+					&__logo
+						top -45px
+				&__escuelaNegocios
+					&__logo
+						top -30px
+				&__escuelaGastronomia
+					&__logo
+						top -30px
+		.sectionUniversidad
+			&-carreras
+				&__ingenieria,
+				&__cienciasEmpresa,
+				&__cienciasSalud,
+				&__humanidades,
+				&__derecho
+					&__frames
+						width 55%
+					// &__enlacesCarreras
+					// 	&__link
+					// 		margin-left 39.5%
+					&__logo
+						top -37px
+				&__ingenieria
+					&__enlacesCarreras
+						margin-left 12%
+				&__cienciasEmpresa,
+				&__cienciasSalud
+					&__enlacesCarreras
+						margin-left 39%
+				&__humanidades,
+				&__derecho
+					&__enlacesCarreras
+						margin-left 39%
+		.sectionUniversidadArequipa
+			&-carreras
+				&__ingenieria,
+				&__cienciasEmpresa,
+				&__cienciasSalud,
+				&__humanidades,
+				&__derecho
+					&__frames
+						width 55%
+					// &__enlacesCarreras
+					// 	&__link
+					// 		margin-left 39.5%
+					&__logo
+						top -37px
+				&__ingenieria,
+				&__cienciasEmpresa
+					&__enlacesCarreras
+						margin-left 39%
+				&__humanidades,
+				&__derecho
+					&__enlacesCarreras
+						margin-left 39%
+		.sectionCarrerasInfo
+			width 80%
+		.footer
+			&-sedes
+				width 90%
+				&-contenedor
+					margin-left 10px
+					margin-right 10px
+@media screen and (max-width:960px)
+	body
+		.sectionIndex
+			width 90%
+		.sectionAdmision
+			&-bloque
+				width 85%
+		.sectionInstituto
+			&-carreras
+				&__escuelaDiseno,
+				&__escuelaTecnologia
+				&__escuelaNegocios,
+				&__escuelaGastronomia
+					&__frames
+						width 60%
+					&__enlacesCarreras
+						&__link
+							margin-left 34.5%
+				&__escuelaDiseno
+					&__logo
+						top -18px
+				&__escuelaTecnologia
+					&__logo
+						top -35px
+				&__escuelaNegocios
+					&__logo
+						top -20px
+				&__escuelaGastronomia
+					&__logo
+						top -20px
+		.sectionUniversidad
+			&-carreras
+				&__ingenieria,
+				&__cienciasEmpresa,
+				&__cienciasSalud,
+				&__humanidades,
+				&__derecho
+					&__frames
+						width 60%
+					// &__enlacesCarreras
+					// 	&__link
+					// 		margin-left 34.5%
+					&__logo
+						top -20px
+				&__ingenieria
+					&__enlacesCarreras
+						margin-left 4%
+				&__cienciasEmpresa,
+				&__cienciasSalud,
+				&__humanidades,
+				&__derecho
+					&__enlacesCarreras
+						margin-left 34%
+		.sectionUniversidadArequipa
+			&-carreras
+				&__ingenieria,
+				&__cienciasEmpresa,
+				&__cienciasSalud,
+				&__humanidades,
+				&__derecho
+					&__frames
+						width 60%
+					// &__enlacesCarreras
+					// 	&__link
+					// 		margin-left 34.5%
+					&__logo
+						top -20px
+				&__ingenieria
+				&__cienciasEmpresa,
+				&__humanidades,
+				&__derecho
+					&__enlacesCarreras
+						margin-left 34%
+@media screen and (max-width:938px)
+	body
+		.header
+			&-contenedor
+				width 95%
+@media screen and (max-width:889px)
+	body
+		.header
+			&-contenedor
+				width 100%
+				&-column1
+					width 25%
+					&_logo
+						width 78%
+				&-column2
+					width 75%
+					&_menu
+						&_lista
+							margin-top 8%
+@media screen and (max-width:790px)
+	body
+		.header
+			&-contenedor
+				&-column2
+					&_menu
+						&_lista
+							padding-left 0
+// @media screen and (max-width:769px)
+// 	body
+// 		.header
+// 			&-contenedor
+// 				display none
+				// &-column2
+				// 	&_menu
+				// 		display none
+@media screen and (max-width:768px)
+	body
+		font-size 12px
+		.menu
+			background rgba(#2094e4,.9)
+			width 36%
+			height auto
+			position fixed
+			right 100%
+			margin 0
+			z-index 1000
+			top 0
+			border-radius 0 10px 10px 0
+			&_lista
+				text-align left
+				padding-left 0
+				&_items
+					display block
+					margin-right 0
+					// border-bottom 1px solid rgba(255,255,255,.5)
+					&_link
+						display block
+						padding 10px
+				&_items .children1
+					position relative
+					width 100%
+					.submenu2
+						.children2
+							position relative
+					.submenu2:hover
+						.children2
+							display none
+				&_items:hover .children1
+					display none
+		.header
+			background none
+			&__menu
+				display block
+				top 45px
+				right 30px
+			&-logoResponsive
+				display block
+				width 150px
+				margin-left auto
+				margin-right auto
+				&_img
+					width 100%
+					display block
+			&-contenedor
+				background rgba(#2094e4,.9)
+				width 70%
+				position fixed
+				right 100%
+				margin 0
+				z-index 1000
+				top 0
+				border-radius 0 10px 10px 0
+				// overflow scroll
+				&-column1
+					display none
+				&-column2
+					width 100%
+					&_redes
+						&_lista
+							text-align left
+					&_menu
+						// overflow scroll
+						&_lista
+							text-align left
+							&_items
+								display block
+								margin-right 0
+								// border-bottom 1px solid rgba(255,255,255,.5)
+								&_link
+									display block
+									padding 10px
+							&_items .children1
+								position relative
+								width 100%
+								.submenu2
+									.children2
+										position relative
+								.submenu2:hover
+									.children2
+										display none
+							&_items:hover .children1
+								display none
+								
+		.sectionIndex
+			&-enlaces
+				&_carreras
+					margin-top 10%
+					&_contenedor
+						margin-bottom 10%
+		.sectionAdmision
+			&-logoAdmision
+				width 260px
+			&-bloque
+				&__parrafo
+					margin-top 5px
+		.sectionAgenda
+			&-agendaLogo
+				width 220px
+			
+			&-calendarioLogo
+				width 240px
+		.sectionInstituto
+			width 80%
+			&-logo
+				width 220px
+			&-carreras
+				&__logoTop
+					display block
+					width 50%
+					margin 0 auto
+					&__img
+						width 100%
+						display block
+				&__escuelaDiseno,
+				&__escuelaTecnologia,
+				&__escuelaNegocios,
+				&__escuelaGastronomia
+					margin-top 5px
+					margin-bottom 20px
+					// &__logoTop
+					// 	background white
+					// 	width 30%
+					// 	&__img
+					// 		width 100%
+					&__logo
+						display none
+					&__frames
+						margin-right auto
+						margin-left auto
+						width 75%
+				// &__escuelaDiseno
+				// 	&__enlacesCarreras
+				// 		&__link
+				// 			margin-left 31%
+				&__escuelaTecnologia,
+				&__escuelaNegocios,
+				&__escuelaGastronomia
+					&__enlacesCarreras
+						&__link
+							margin-left 29%
+					
+				// &__escuelaTecnologia
+				// 	margin-top 5px
+		.sectionUniversidad
+			width 80%
+			&-logo
+				width 220px
+			&-carreras
+				&__logoTop
+					display block
+					width 50%
+					margin 0 auto
+					&__img
+						width 100%
+						display block
+				&__cienciasEmpresa,
+				&__cienciasSalud
+					&__enlacesCarreras
+						margin-left 10%
+				&__ingenieria,
+				&__cienciasEmpresa,
+				&__cienciasSalud,
+				&__humanidades,
+				&__derecho
+					margin-top 5px
+					margin-bottom 20px
+					&__logo
+						display none
+				&__ingenieria,
+				&__cienciasEmpresa,
+				&__cienciasSalud
+					&__frames
+						margin-right auto
+						margin-left auto
+						width 75%
+				&__humanidades
+					&__enlacesCarreras
+						margin-left 23%
+					&__frames
+						width 50%
+						margin-right auto
+						margin-left auto
+						&__contenedor
+							width 50%
+							margin-left 10px
+				&__derecho
+					&__enlacesCarreras
+						margin-left 41%
+					&__frames
+						width 24%
+						margin-right auto
+						margin-left auto
+						&__contenedor
+							width 100%
+							margin-right 0
+		.sectionUniversidadArequipa
+			width 80%
+			&-logo
+				width 220px
+			&-carreras
+				&__logoTop
+					display block
+					width 50%
+					margin 0 auto
+					&__img
+						width 100%
+						display block
+				&__cienciasEmpresa,
+				&__ingenieria
+					&__enlacesCarreras
+						margin-left 10%
+				&__ingenieria,
+				&__cienciasEmpresa,
+				&__cienciasSalud,
+				&__humanidades,
+				&__derecho
+					margin-top 5px
+					margin-bottom 20px
+					&__logo
+						display none
+				&__ingenieria,
+				&__cienciasEmpresa,
+				&__cienciasSalud
+					&__frames
+						margin-right auto
+						margin-left auto
+						width 75%
+				&__humanidades
+					&__enlacesCarreras
+						margin-left 23%
+					&__frames
+						width 50%
+						margin-right auto
+						margin-left auto
+						&__contenedor
+							width 50%
+							margin-left 10px
+				&__derecho
+					&__enlacesCarreras
+						margin-left 41%
+					&__frames
+						width 24%
+						margin-right auto
+						margin-left auto
+						&__contenedor
+							width 100%
+							margin-right 0
+		.sectionContactoInsti,
+		.sectionContactoUni
+			width 80%
+			&-logoInsti,
+			&-logoUni
+				width 220px
+				margin-top 40px
+			&-logoVisita
+				width 330px
+			&-logoFormulario
+				width 330px
+				
+		.sectionCarrerasInfo
+			&-logoTop
+				margin-left auto
+				margin-right auto
+				width 50%
+			&-titulo
+				text-align center
+			
+		.sectionDescubreTalentos
+			width 80%
+			&-Logo
+				width 70%
+		.sectionVisitanos
+			width 80%
+			&-logo
+				width 58%
+			
+@media screen and (max-width:640px)
+	body
+		.sectionAdmision
+			&-bloque
+				width 90%
+				&__logo
+					width 150px
+		.sectionInstituto
+			&-carreras
+				&__escuelaDiseno
+					&__enlacesCarreras
+						&__link
+							margin-left 29%
+				&__escuelaTecnologia,
+				&__escuelaNegocios,
+				&__escuelaGastronomia
+					&__enlacesCarreras
+						&__link
+							margin-left 22%
+		.sectionUniversidad
+			&-carreras
+				&__ingenieria
+					&__enlacesCarreras
+						margin-left 10%
+						&__contenedor
+							&__column
+								width 50%
+				&__humanidades
+					&__enlacesCarreras
+						margin-left 17%
+				&__derecho
+					&__enlacesCarreras
+						margin-left 39%
+		.sectionUniversidadArequipa
+			&-carreras
+				&__humanidades
+					&__enlacesCarreras
+						margin-left 17%
+				&__derecho
+					&__enlacesCarreras
+						margin-left 39%
+		.sectionContactoInsti,
+		.sectionContactoUni
+			&-formulario
+				&__bloque1,
+				&__bloque2
+					width 100%
+					&__input
+						margin-bottom 25px
+				&__bloque3
+					width 100%
+					&__textarea
+						margin-left 10%
+						width 77%
+						
+		.sectionCarrerasInfo
+			width 90%
+			&-content
+				&-video
+					width 100%
+					margin-bottom 20px
+					iframe,
+					object,
+					embed,
+					video
+						width 100%
+				&__description
+					width 100%
+		.sectionVisitanos
+			&-enlaces
+				&_carreras
+					display block
+					margin-top 40px
+					&_contenedor
+						width 60%
+						margin-left auto
+						margin-right auto
+						margin-bottom 35px
+		.footer
+			&-sedes
+				flex-wrap wrap
+				&-contenedor
+					width 42%
+@media screen and (max-width:480px)
+	body
+		.sectionIndex
+			&-enlaces
+				&_joven
+					display none
+				&_carreras
+					margin-left auto
+					margin-right auto
+					width 80%
+					&_contenedor
+						margin 0 auto
+						&_link
+							margin-bottom 20px
+		.sectionAdmision
+			&-bloque
+				&__logo
+					margin-right auto
+					margin-left auto
+		
+		.sectionAgenda
+			&-Calendario
+				width 80%
+		.sectionInstituto
+			width 90%
+			&-carreras
+				&__escuelaDiseno,
+				&__escuelaTecnologia,
+				&__escuelaNegocios,
+				&__escuelaGastronomia
+					&__frames
+						display none
+					&__enlacesCarreras
+						display block
+						padding-top 30px
+					&__boton
+						display none
+				&__escuelaDiseno,
+				&__escuelaTecnologia,
+				&__escuelaNegocios,
+				&__escuelaGastronomia
+					&__enlacesCarreras
+						&__link
+							width 65%
+							margin-left auto
+							margin-right auto
+		.sectionUniversidad
+			width 90%
+			&-carreras
+				&__ingenieria,
+				&__cienciasEmpresa,
+				&__cienciasSalud,
+				&__humanidades,
+				&__derecho
+					&__frames
+						display none
+					&__enlacesCarreras
+						display block
+						padding-top 30px
+						&__contenedor
+							&__column
+								width 100%
+					&__boton
+						display none
+				&__ingenieria,
+				&__humanidades
+					&__enlacesCarreras
+						margin-left 10%
+				&__derecho
+					&__enlacesCarreras
+						margin-left 37%
+		.sectionUniversidadArequipa
+			width 90%
+			&-carreras
+				&__ingenieria,
+				&__cienciasEmpresa,
+				&__cienciasSalud,
+				&__humanidades,
+				&__derecho
+					&__frames
+						display none
+					&__enlacesCarreras
+						display block
+						padding-top 30px
+						// width 100%
+						&__column
+							width 100%
+					&__boton
+						display none
+				&__ingenieria,
+				&__humanidades
+					&__enlacesCarreras
+						margin-left 10%
+				&__derecho
+					&__enlacesCarreras
+						margin-left 37%
+		.sectionContactoInsti,
+		.sectionContactoUni
+			width 90%
+			&-logoVisita,
+			&-logoFormulario
+				width 85%
+			&-formulario
+				// font-size 1rem
+				&__tituloContenedor
+					margin-left 0
+					&__titulo
+						font-size 1rem
+		.sectionDescubreTalentos
+			width 90%
+			&-Logo
+				width 90%
+			
+			
+				
+		
+		
