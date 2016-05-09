@@ -206,16 +206,16 @@ body {
   margin-bottom: 20px;
 }
 .sectionIndex-titulo {
-  width: 40%;
+  width: 43%;
   color: #39c;
 }
 .sectionIndex-titulo_cont {
   margin-top: 18%;
-  margin-left: 48px;
   font-family: Avenir Heavy;
+  font-size: 39px;
 }
 .sectionIndex-video {
-  width: 60%;
+  width: 57%;
   position: relative;
 }
 .sectionIndex-video-contenedor {
@@ -342,6 +342,22 @@ body {
   padding: 10px;
   width: 75%;
 }
+.sectionIndex-cont-formulario__bloque1__input::-webkit-input-placeholder,
+.sectionIndex-cont-formulario__bloque2__input::-webkit-input-placeholder {
+  color: #333;
+}
+.sectionIndex-cont-formulario__bloque1__input:-moz-placeholder,
+.sectionIndex-cont-formulario__bloque2__input:-moz-placeholder {
+  color: #333;
+}
+.sectionIndex-cont-formulario__bloque1__input::-moz-placeholder,
+.sectionIndex-cont-formulario__bloque2__input::-moz-placeholder {
+  color: #333;
+}
+.sectionIndex-cont-formulario__bloque1__input:-ms-input-placeholder,
+.sectionIndex-cont-formulario__bloque2__input:-ms-input-placeholder {
+  color: #333;
+}
 .sectionIndex-cont-formulario__bloque3 {
   width: 100%;
   margin-bottom: 15px;
@@ -357,6 +373,18 @@ body {
   padding-top: 10px;
   padding-left: 10px;
 }
+.sectionIndex-cont-formulario__bloque3__textarea::-webkit-input-placeholder {
+  color: #333;
+}
+.sectionIndex-cont-formulario__bloque3__textarea:-moz-placeholder {
+  color: #333;
+}
+.sectionIndex-cont-formulario__bloque3__textarea::-moz-placeholder {
+  color: #333;
+}
+.sectionIndex-cont-formulario__bloque3__textarea:-ms-input-placeholder {
+  color: #333;
+}
 .sectionIndex-cont-formulario__btn {
   border: none;
   padding: 10px 20px 10px 20px;
@@ -371,32 +399,52 @@ body {
   position: absolute;
 }
 .sectionAdmision {
-  margin-bottom: 80px;
-}
-.sectionAdmision-logoAdmision {
-  width: 18%;
-  margin: 0 auto;
-}
-.sectionAdmision-logoAdmision__img {
-  width: 100%;
-  display: block;
-}
-.sectionAdmision-bloque {
-  width: 65%;
+  max-width: 980px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 65px;
+  margin-bottom: 70px;
 }
-.sectionAdmision-bloque__logo {
-  width: 20%;
+.sectionAdmision-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.sectionAdmision-row__contenedorImg {
+  width: 30%;
   margin: 0;
 }
-.sectionAdmision-bloque__logo__img {
-  width: 100%;
+.sectionAdmision-row__contenedorImg img {
+  width: 52.386%;
   display: block;
+  margin-left: 15%;
+  margin-right: auto;
 }
-.sectionAdmision-bloque__parrafo {
-  width: 93%;
-  margin: 40px auto 20px auto;
+.sectionAdmision-row__descripcion {
+  width: 56.7%;
+  margin: 0;
+  font-family: Avenir light;
+  font-size: 13px;
+  text-align: justify;
+  margin-top: 3%;
+  line-height: 18px;
+}
+.sectionAdmision-line {
+  border: 2px solid #39f;
+  display: block;
+  width: 81.4%;
+  margin-left: 5%;
 }
 .sectionAgenda-agendaLogo {
   width: 18%;
@@ -616,830 +664,207 @@ body {
 .sectionAgenda-Calendario #mini-clndr .clndr .days-container .days .empty.adjacent-month {
   color: rgba(0,0,0,0.3);
 }
-.sectionContactoInsti {
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-.sectionContactoInsti-logoInsti {
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 70px;
-  margin-bottom: 0;
-}
-.sectionContactoInsti-logoInsti__img {
-  width: 100%;
-}
-.sectionContactoInsti-logoVisita {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 0;
-}
-.sectionContactoInsti-logoVisita__img {
-  width: 100%;
-}
-.sectionContactoInsti-parrafoTop {
-  font-family: Verdana;
-  font-size: 200;
-  margin-top: 60px;
-}
-.sectionContactoInsti-logoFormulario {
-  width: 55%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 0;
-}
-.sectionContactoInsti-logoFormulario__img {
-  width: 100%;
-  display: block;
-}
-.sectionContactoInsti-formulario {
-  background: #64cff1;
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Verdana;
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-bottom: 45px;
-  position: relative;
-}
-.sectionContactoInsti-formulario__tituloContenedor {
-  margin-top: 10px;
-  margin-left: 30px;
-  width: 100%;
-}
-.sectionContactoInsti-formulario__tituloContenedor__titulo {
-  margin: 0;
-  color: #454545;
-  padding: 35px 0 20px 30px;
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-.sectionContactoInsti-formulario__bloque1,
-.sectionContactoInsti-formulario__bloque2 {
-  width: 50%;
-}
-.sectionContactoInsti-formulario__bloque1__input,
-.sectionContactoInsti-formulario__bloque2__input {
-  border: none;
-  display: block;
-  margin-left: 10%;
-  margin-bottom: 15px;
-  padding: 10px;
-  width: 75%;
-}
-.sectionContactoInsti-formulario__bloque3 {
-  width: 100%;
-  margin-bottom: 25px;
-}
-.sectionContactoInsti-formulario__bloque3__textarea {
-  border: none;
-  display: block;
-  margin-left: 5%;
-  width: 88%;
-  padding-top: 10px;
-  padding-left: 10px;
-}
-.sectionContactoInsti-formulario__btn {
-  border: none;
-  padding: 10px 20px 10px 20px;
-  display: block;
-  background: #007de3;
-  color: #fff;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  font-size: 1.3rem;
-  bottom: 10px;
-  right: 20px;
-  position: absolute;
-}
-.sectionContactoUni {
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-.sectionContactoUni-logoUni {
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 70px;
-  margin-bottom: 0;
-}
-.sectionContactoUni-logoUni__img {
-  width: 100%;
-}
-.sectionContactoUni-logoVisita {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 0;
-}
-.sectionContactoUni-logoVisita__img {
-  width: 100%;
-}
-.sectionContactoUni-parrafoTop {
-  font-family: Verdana;
-  font-size: 200;
-  margin-top: 60px;
-}
-.sectionContactoUni-logoFormulario {
-  width: 55%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 0;
-}
-.sectionContactoUni-logoFormulario__img {
-  width: 100%;
-  display: block;
-}
-.sectionContactoUni-formulario {
-  background: #64cff1;
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Verdana;
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-bottom: 45px;
-  position: relative;
-}
-.sectionContactoUni-formulario__tituloContenedor {
-  margin-top: 10px;
-  margin-left: 30px;
-  width: 100%;
-}
-.sectionContactoUni-formulario__tituloContenedor__titulo {
-  margin: 0;
-  color: #454545;
-  padding: 35px 0 20px 30px;
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-.sectionContactoUni-formulario__bloque1,
-.sectionContactoUni-formulario__bloque2 {
-  width: 50%;
-}
-.sectionContactoUni-formulario__bloque1__input,
-.sectionContactoUni-formulario__bloque2__input {
-  border: none;
-  display: block;
-  margin-left: 10%;
-  margin-bottom: 15px;
-  padding: 10px;
-  width: 75%;
-}
-.sectionContactoUni-formulario__bloque3 {
-  width: 100%;
-  margin-bottom: 25px;
-}
-.sectionContactoUni-formulario__bloque3__textarea {
-  border: none;
-  display: block;
-  margin-left: 5%;
-  width: 88%;
-  padding-top: 10px;
-  padding-left: 10px;
-}
-.sectionContactoUni-formulario__btn {
-  border: none;
-  padding: 10px 20px 10px 20px;
-  display: block;
-  background: #007de3;
-  color: #fff;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  font-size: 1.3rem;
-  bottom: 10px;
-  right: 20px;
-  position: absolute;
-}
 .sectionInstituto {
-  width: 70%;
-  margin-right: auto;
+  max-width: 980px;
   margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
-.sectionInstituto-logo {
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
+.sectionInstituto-carreras__escuela {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-.sectionInstituto-logo__img {
+.sectionInstituto-carreras__escuela__logo {
+  width: 30%;
+  margin: 0;
+}
+.sectionInstituto-carreras__escuela__logo img {
+  width: 84.355%;
+}
+.sectionInstituto-carreras__escuela__contenedorDerecha {
+  width: 65.409%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  max-height: 189px;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #808080;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.sectionInstituto-carreras__escuela__contenedorDerecha__col {
+  width: 28.707%;
+  margin-top: 40px;
+  text-align: center;
+}
+.sectionInstituto-carreras__escuela__contenedorDerecha__col__frame {
+  margin: 0 5px;
+}
+.sectionInstituto-carreras__escuela__contenedorDerecha__col__frame img {
   width: 100%;
 }
-.sectionInstituto-parrafoTop {
-  font-family: Verdana;
-  font-size: 200;
-}
-.sectionInstituto-carreras__logoTop {
-  display: none;
-}
-.sectionInstituto-carreras__escuelaDiseno,
-.sectionInstituto-carreras__escuelaTecnologia,
-.sectionInstituto-carreras__escuelaNegocios,
-.sectionInstituto-carreras__escuelaGastronomia {
-  color: #fff;
-  font-family: Verdana;
-}
-.sectionInstituto-carreras__escuelaDiseno__enlacesCarreras,
-.sectionInstituto-carreras__escuelaTecnologia__enlacesCarreras,
-.sectionInstituto-carreras__escuelaNegocios__enlacesCarreras,
-.sectionInstituto-carreras__escuelaGastronomia__enlacesCarreras {
-  display: none;
-  width: 100%;
-  padding: 10px 10px 35px 10px;
-}
-.sectionInstituto-carreras__escuelaDiseno__enlacesCarreras__link,
-.sectionInstituto-carreras__escuelaTecnologia__enlacesCarreras__link,
-.sectionInstituto-carreras__escuelaNegocios__enlacesCarreras__link,
-.sectionInstituto-carreras__escuelaGastronomia__enlacesCarreras__link {
-  display: block;
+.sectionInstituto-carreras__escuela__contenedorDerecha__col__link {
   text-decoration: none;
   color: #fff;
-  margin-left: 45%;
-  padding: 5px;
-}
-.sectionInstituto-carreras__escuelaDiseno__boton,
-.sectionInstituto-carreras__escuelaTecnologia__boton,
-.sectionInstituto-carreras__escuelaNegocios__boton,
-.sectionInstituto-carreras__escuelaGastronomia__boton {
-  position: absolute;
-  text-decoration: none;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #0091e3;
+  font-family: Avenir Light;
+  font-size: 13.5px;
   display: block;
-  color: #fff;
-  padding: 10px;
-  bottom: -15px;
-  right: 3%;
-}
-.sectionInstituto-carreras__escuelaDiseno {
-  background-color: #575757;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 60px;
-  position: relative;
-}
-.sectionInstituto-carreras__escuelaDiseno__logo {
-  position: absolute;
-  width: 30%;
-  margin: 0;
-  top: -55px;
-  left: 5%;
-}
-.sectionInstituto-carreras__escuelaDiseno__logo__img {
-  width: 100%;
-  display: block;
-}
-.sectionInstituto-carreras__escuelaDiseno__frames {
-  width: 50%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  margin-right: 4%;
-  margin-left: auto;
-}
-.sectionInstituto-carreras__escuelaDiseno__frames__contenedor {
-  width: 32%;
-  margin: 32px 10px 32px 0;
-}
-.sectionInstituto-carreras__escuelaDiseno__frames__contenedor__img {
-  width: 100%;
-  display: block;
-}
-.sectionInstituto-carreras__escuelaTecnologia {
-  background-color: #575757;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 82px;
-  position: relative;
-}
-.sectionInstituto-carreras__escuelaTecnologia__logo {
-  position: absolute;
-  width: 30%;
-  margin: 0;
-  top: -75px;
-  left: 5%;
-}
-.sectionInstituto-carreras__escuelaTecnologia__logo__img {
-  width: 100%;
-  display: block;
-}
-.sectionInstituto-carreras__escuelaTecnologia__frames {
-  width: 50%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  margin-right: 4%;
-  margin-left: auto;
-}
-.sectionInstituto-carreras__escuelaTecnologia__frames__contenedor {
-  width: 32%;
-  margin: 32px 10px 32px 0;
-}
-.sectionInstituto-carreras__escuelaTecnologia__frames__contenedor__img {
-  width: 100%;
-  display: block;
-}
-.sectionInstituto-carreras__escuelaNegocios {
-  background-color: #575757;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 82px;
-  position: relative;
-}
-.sectionInstituto-carreras__escuelaNegocios__logo {
-  position: absolute;
-  width: 30%;
-  margin: 0;
-  left: 5%;
-  top: -65px;
-}
-.sectionInstituto-carreras__escuelaNegocios__logo__img {
-  width: 100%;
-  display: block;
-}
-.sectionInstituto-carreras__escuelaNegocios__frames {
-  width: 50%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  margin-right: 4%;
-  margin-left: auto;
-}
-.sectionInstituto-carreras__escuelaNegocios__frames__contenedor {
-  width: 32%;
-  margin: 32px 10px 32px 0;
-}
-.sectionInstituto-carreras__escuelaNegocios__frames__contenedor__img {
-  width: 100%;
-  display: block;
-}
-.sectionInstituto-carreras__escuelaGastronomia {
-  background-color: #575757;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 82px;
-  position: relative;
-}
-.sectionInstituto-carreras__escuelaGastronomia__logo {
-  position: absolute;
-  width: 30%;
-  margin: 0;
-  top: -70px;
-  left: 5%;
-}
-.sectionInstituto-carreras__escuelaGastronomia__logo__img {
-  width: 100%;
-  display: block;
-}
-.sectionInstituto-carreras__escuelaGastronomia__frames {
-  width: 50%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  margin-right: 4%;
-  margin-left: auto;
-}
-.sectionInstituto-carreras__escuelaGastronomia__frames__contenedor {
-  width: 32%;
-  margin: 32px 10px 32px 0;
-}
-.sectionInstituto-carreras__escuelaGastronomia__frames__contenedor__img {
-  width: 100%;
-  display: block;
+  padding: 12px 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
 }
 .sectionUniversidad {
-  width: 70%;
+  max-width: 936px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 28px;
 }
-.sectionUniversidad-logo {
-  width: 25%;
+.sectionUniversidad-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.sectionUniversidad-row__contenedorImg {
+  width: 32%;
+  margin: 0;
+}
+.sectionUniversidad-row__contenedorImg img {
+  width: 66.11%;
+}
+.sectionUniversidad-row__contenedorDerecha {
+  width: 68%;
+  background-color: #838383;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding-top: 44px;
+  padding-bottom: 12px;
+  font-family: Avenir light;
+}
+.sectionUniversidad-row__contenedorDerecha__carreras {
+  width: 84.529%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sectionUniversidad-row__contenedorDerecha__carreras__listaContenedor1 {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.sectionUniversidad-row__contenedorDerecha__carreras__listaContenedor1__item {
+  list-style: none;
+  width: 50%;
+}
+.sectionUniversidad-row__contenedorDerecha__carreras__listaContenedor1__item__link {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 13.5px;
+  padding: 5px;
+}
+.sectionUniversidad-row__contenedorDerecha__carreras__listaContenedor {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.sectionUniversidad-row__contenedorDerecha__carreras__listaContenedor__item {
+  list-style: none;
+  width: 50%;
+}
+.sectionUniversidad-row__contenedorDerecha__carreras__listaContenedor__item__link {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 13.5px;
+  padding: 5px;
+}
+.sectionUniversidad-row__contenedorDerecha__contenedorImg {
+  margin: 0;
+}
+.sectionUniversidad-row__contenedorDerecha__contenedorImg img {
+  width: 84.53%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.sectionUniversidad-logo__img {
-  width: 100%;
+.sectionUniversidad-row__contenedorDerecha__contenedorBoton {
+  text-align: right;
+  margin-top: 16px;
 }
-.sectionUniversidad-parrafoTop {
-  font-family: Verdana;
-  font-size: 200;
-}
-.sectionUniversidad-carreras__logoTop {
-  display: none;
-}
-.sectionUniversidad-carreras__ingenieria,
-.sectionUniversidad-carreras__cienciasEmpresa,
-.sectionUniversidad-carreras__cienciasSalud,
-.sectionUniversidad-carreras__humanidades,
-.sectionUniversidad-carreras__derecho {
-  color: #fff;
-  font-family: Verdana;
-}
-.sectionUniversidad-carreras__ingenieria__enlacesCarreras,
-.sectionUniversidad-carreras__cienciasEmpresa__enlacesCarreras,
-.sectionUniversidad-carreras__cienciasSalud__enlacesCarreras,
-.sectionUniversidad-carreras__humanidades__enlacesCarreras,
-.sectionUniversidad-carreras__derecho__enlacesCarreras {
-  display: none;
-  width: 100%;
-  padding: 10px 10px 35px 10px;
-}
-.sectionUniversidad-carreras__ingenieria__enlacesCarreras__contenedor,
-.sectionUniversidad-carreras__cienciasEmpresa__enlacesCarreras__contenedor,
-.sectionUniversidad-carreras__cienciasSalud__enlacesCarreras__contenedor,
-.sectionUniversidad-carreras__humanidades__enlacesCarreras__contenedor,
-.sectionUniversidad-carreras__derecho__enlacesCarreras__contenedor {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-.sectionUniversidad-carreras__ingenieria__enlacesCarreras__contenedor__column__link,
-.sectionUniversidad-carreras__cienciasEmpresa__enlacesCarreras__contenedor__column__link,
-.sectionUniversidad-carreras__cienciasSalud__enlacesCarreras__contenedor__column__link,
-.sectionUniversidad-carreras__humanidades__enlacesCarreras__contenedor__column__link,
-.sectionUniversidad-carreras__derecho__enlacesCarreras__contenedor__column__link {
-  display: block;
+.sectionUniversidad-row__contenedorDerecha__contenedorBoton__boton {
   text-decoration: none;
   color: #fff;
-  padding: 7px;
-  font-size: 0.8rem;
-}
-.sectionUniversidad-carreras__ingenieria__boton,
-.sectionUniversidad-carreras__cienciasEmpresa__boton,
-.sectionUniversidad-carreras__cienciasSalud__boton,
-.sectionUniversidad-carreras__humanidades__boton,
-.sectionUniversidad-carreras__derecho__boton {
-  position: absolute;
-  text-decoration: none;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #0091e3;
-  display: block;
-  color: #fff;
-  padding: 10px;
-  bottom: -15px;
-  right: 3%;
-}
-.sectionUniversidad-carreras__ingenieria {
-  background-color: #575757;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 60px;
-  position: relative;
-}
-.sectionUniversidad-carreras__ingenieria__enlacesCarreras {
-  margin-left: 20%;
-}
-.sectionUniversidad-carreras__ingenieria__enlacesCarreras__contenedor__column {
-  width: 33%;
-}
-.sectionUniversidad-carreras__ingenieria__logo {
-  position: absolute;
-  width: 30%;
-  margin: 0;
-  top: -50px;
-}
-.sectionUniversidad-carreras__ingenieria__logo__img {
-  width: 100%;
-  display: block;
-}
-.sectionUniversidad-carreras__ingenieria__frames {
-  width: 50%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  margin-right: 4%;
-  margin-left: auto;
-}
-.sectionUniversidad-carreras__ingenieria__frames__contenedor {
-  width: 32%;
-  margin: 32px 10px 32px 0;
-}
-.sectionUniversidad-carreras__ingenieria__frames__contenedor__img {
-  width: 100%;
-  display: block;
-}
-.sectionUniversidad-carreras__cienciasEmpresa {
-  background-color: #575757;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 60px;
-  position: relative;
-}
-.sectionUniversidad-carreras__cienciasEmpresa__enlacesCarreras {
-  margin-left: 45%;
-}
-.sectionUniversidad-carreras__cienciasEmpresa__enlacesCarreras__contenedor__column {
-  width: 50%;
-}
-.sectionUniversidad-carreras__cienciasEmpresa__logo {
-  position: absolute;
-  width: 30%;
-  margin: 0;
-  top: -50px;
-  left: 5%;
-}
-.sectionUniversidad-carreras__cienciasEmpresa__logo__img {
-  width: 100%;
-  display: block;
-}
-.sectionUniversidad-carreras__cienciasEmpresa__frames {
-  width: 50%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  margin-right: 4%;
-  margin-left: auto;
-}
-.sectionUniversidad-carreras__cienciasEmpresa__frames__contenedor {
-  width: 32%;
-  margin: 32px 10px 32px 0;
-}
-.sectionUniversidad-carreras__cienciasEmpresa__frames__contenedor__img {
-  width: 100%;
-  display: block;
-}
-.sectionUniversidad-carreras__cienciasSalud {
-  background-color: #575757;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 60px;
-  position: relative;
-}
-.sectionUniversidad-carreras__cienciasSalud__enlacesCarreras {
-  margin-left: 45%;
-}
-.sectionUniversidad-carreras__cienciasSalud__enlacesCarreras__contenedor__column {
-  width: 50%;
-}
-.sectionUniversidad-carreras__cienciasSalud__logo {
-  position: absolute;
-  width: 30%;
-  margin: 0;
-  top: -50px;
-}
-.sectionUniversidad-carreras__cienciasSalud__logo__img {
-  width: 100%;
-  display: block;
-}
-.sectionUniversidad-carreras__cienciasSalud__frames {
-  width: 50%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  margin-right: 4%;
-  margin-left: auto;
-}
-.sectionUniversidad-carreras__cienciasSalud__frames__contenedor {
-  width: 32%;
-  margin: 32px 10px 32px 0;
-}
-.sectionUniversidad-carreras__cienciasSalud__frames__contenedor__img {
-  width: 100%;
-  display: block;
-}
-.sectionUniversidad-carreras__humanidades {
-  background-color: #575757;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 60px;
-  position: relative;
-}
-.sectionUniversidad-carreras__humanidades__enlacesCarreras {
-  margin-left: 45%;
-}
-.sectionUniversidad-carreras__humanidades__enlacesCarreras__contenedor__column {
-  width: 100%;
-}
-.sectionUniversidad-carreras__humanidades__logo {
-  position: absolute;
-  width: 30%;
-  margin: 0;
-  top: -50px;
-}
-.sectionUniversidad-carreras__humanidades__logo__img {
-  width: 100%;
-  display: block;
-}
-.sectionUniversidad-carreras__humanidades__frames {
-  width: 50%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  margin-right: 4%;
-  margin-left: auto;
-}
-.sectionUniversidad-carreras__humanidades__frames__contenedor {
-  width: 32%;
-  margin: 32px 10px 32px 0;
-}
-.sectionUniversidad-carreras__humanidades__frames__contenedor__img {
-  width: 100%;
-  display: block;
-}
-.sectionUniversidad-carreras__derecho {
-  background-color: #575757;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 60px;
-  position: relative;
-}
-.sectionUniversidad-carreras__derecho__enlacesCarreras {
-  margin-left: 45%;
-}
-.sectionUniversidad-carreras__derecho__enlacesCarreras__column {
-  width: 100%;
-}
-.sectionUniversidad-carreras__derecho__logo {
-  position: absolute;
-  width: 30%;
-  margin: 0;
-  top: -50px;
-}
-.sectionUniversidad-carreras__derecho__logo__img {
-  width: 100%;
-  display: block;
-}
-.sectionUniversidad-carreras__derecho__frames {
-  width: 50%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  margin-right: 4%;
-  margin-left: auto;
-}
-.sectionUniversidad-carreras__derecho__frames__contenedor {
-  width: 32%;
-  margin: 32px 10px 32px 0;
-}
-.sectionUniversidad-carreras__derecho__frames__contenedor__img {
-  width: 100%;
-  display: block;
+  font-size: 13px;
+  background: #467cdf;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-right: 7.6%;
 }
 .sectionUniversidadArequipa {
   width: 70%;
