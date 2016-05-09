@@ -709,12 +709,14 @@ body {
 .menu_lista {
   margin: 0;
 }
-.menu_lista_items{
+.menu_lista_items,
+.menu-item{
   display: inline-block;
   position: relative;
   list-style: none;
 }
-.menu_lista_items_link {
+.menu_lista_items_link,
+.menu-item a {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
@@ -734,6 +736,14 @@ body {
   -o-transition: 0.7s;
   -ms-transition: 0.7s;
   transition: 0.7s;
+}
+.menu-item:hover{
+	background: #525252;
+	-webkit-transition: 0.7s;
+	-moz-transition: 0.7s;
+	-o-transition: 0.7s;
+	-ms-transition: 0.7s;
+	transition: 0.7s;
 }
 .menu_lista_items .children1 {
   display: none;

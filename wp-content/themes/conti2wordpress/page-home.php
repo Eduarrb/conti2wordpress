@@ -3,12 +3,18 @@
 	Template Name: Index page
  */
 
+//Advanced Custom Fields
+
+$titulo_principal		=	get_field('titulo_principal');
+$index_video			=	get_field('index_video');
+
+
 get_header(); ?>
 
 	<section class="sectionIndex">
 		<article class="sectionIndex-titulo">
 			<h1 class="sectionIndex-titulo_cont">
-				Estas a punto de tomar una decisión muy importante:
+				<?php echo $titulo_principal;?>
 			</h1>
 		</article>
 		<article class="sectionIndex-video">
@@ -17,7 +23,7 @@ get_header(); ?>
 			</figure>
 			<div class="sectionIndex-video_caja">
 				<div class="sectionIndex-video_caja_youtube">
-					<iframe src="https://www.youtube.com/embed/hLxisNUR3VI?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+					<iframe src="<?php echo $index_video?>?rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</article>

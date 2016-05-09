@@ -19,7 +19,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory');?>/assets/js/main.js"></script>
+
 <?php wp_head(); ?>
 </head>
 
@@ -38,7 +38,7 @@
 		<div class="header-contenedor">
 			<div class="header-contenedor-raw1">
 				<figure class="header-contenedor-raw1_logo">
-					<a href="index.html"><img src="<?php bloginfo('stylesheet_directory') ?> /assets/imagenes/logo.png" alt="" class="header-contenedor-raw1_logo_img"></a>
+					<a href="http://localhost/"><img src="<?php bloginfo('stylesheet_directory') ?> /assets/imagenes/logo.png" alt="" class="header-contenedor-raw1_logo_img"></a>
 					
 				</figure>
 				<div class="header-contenedor-raw1_redes">

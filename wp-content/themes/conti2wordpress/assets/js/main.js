@@ -1,4 +1,4 @@
-$('.menu-item').addClass('menu_lista_items');
+
 $('.menu-item a').addClass('menu_lista_items_link');
 $(document).ready(main);
 var contador = 1;
