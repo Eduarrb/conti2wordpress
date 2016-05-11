@@ -50,14 +50,38 @@
 				</div>
 			</div><!-- header-contenedor-raw1 -->
 		</div>
-	</header>  
+	</header> 
+	<nav class="menu">
+		<ul class="menu_lista">
+			<!-- sub menu -->
+			<!-- <li class="menu_lista_items"><a href="index.html" class="menu_lista_items_link">Inicio</a></li> -->
+			<li class="menu_lista_items submenu">
+				<a href="#" class="menu_lista_items_link">Carreras <span class="icon-chevron-down"></span>
+				</a>
+				<ul class="children1">
+					<li style=""><a href="http://localhost/instituto/" onMouseOver="this.style.background='#0160a7'"onMouseOut="this.style.background='#0080e0'">INSTITUTO</a></li>
+					<li class="submenu2">
+						<a href="#" onMouseOver="this.style.background='#0160a7'"onMouseOut="this.style.background='#0080e0'">UNIVERSIDAD<span class="icon-chevron-down"></span></a>
+						<ul class="children2">
+							<li onMouseOver="this.style.background='#0160a7'"onMouseOut="this.style.background='#00ace7'"><a href="http://localhost/universidad/" >HUANCAYO</a></li>
+							<!-- <li onMouseOver="this.style.background='#0160a7'"onMouseOut="this.style.background='#00ace7'"><a href="uniArequipa.html" >AREQUIPA</a></li> -->
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="menu_lista_items"><a href="http://localhost/descubre-tus-talentos/" class="menu_lista_items_link">descubre tus talentos</a></li>
+			<li class="menu_lista_items"><a href="http://localhost/admision/" class="menu_lista_items_link">admisión</a></li>
+			<li class="menu_lista_items"><a href=" http://localhost/events/" class="menu_lista_items_link">agenda</a></li>
+			<li class="menu_lista_items"><a href="visitanos.html" class="menu_lista_items_link">visitanos</a></li>
+		</ul>
+	</nav> 
 	<?php
-		wp_nav_menu( array(
-				'theme_location'	=>	'primary',
-				'container'			=>	'nav',
-				'container_class'	=>	'menu',
-				'menu_class'		=>	'menu_lista'			)
-		);
+		// wp_nav_menu( array(
+		// 		'theme_location'	=>	'primary',
+		// 		'container'			=>	'nav',
+		// 		'container_class'	=>	'menu',
+		// 		'menu_class'		=>	'menu_lista'			)
+		// );
 	?>
 	<!-- <nav class="menu">
 		<ul class="menu_lista">

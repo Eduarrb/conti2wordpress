@@ -50,5 +50,6 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/assets/js/main.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/assets/js/baseInstituto.js"></script>
 </body>
 </html>

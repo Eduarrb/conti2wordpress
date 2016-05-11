@@ -1,5 +1,10 @@
 
-$('.menu-item a').addClass('menu_lista_items_link');
+// $('.menu-item a').addClass('menu_lista_items_link');
+// $('ul .sub-menu').addClass('sub-menu');
+// $('ul .sub-menu').removeClass('sub-menu');
+$('.tribe-clearfix').prepend('<img/>');
+$(".tribe-clearfix img").addClass('imgCalendar');
+$(".imgCalendar").attr("src","../wp-content/themes/conti2wordpress/assets/imagenes/agenda.png");
 $(document).ready(main);
 var contador = 1;
 var $boton = $('.submenu'),

@@ -10,7 +10,7 @@ $index_video			=	get_field('index_video');
 
 
 get_header(); ?>
-
+	
 	<section class="sectionIndex">
 		<article class="sectionIndex-titulo">
 			<h1 class="sectionIndex-titulo_cont">
