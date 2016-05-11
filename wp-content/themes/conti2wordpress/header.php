@@ -72,7 +72,7 @@
 			<li class="menu_lista_items"><a href="http://localhost/descubre-tus-talentos/" class="menu_lista_items_link">descubre tus talentos</a></li>
 			<li class="menu_lista_items"><a href="http://localhost/admision/" class="menu_lista_items_link">admisión</a></li>
 			<li class="menu_lista_items"><a href=" http://localhost/events/" class="menu_lista_items_link">agenda</a></li>
-			<li class="menu_lista_items"><a href="visitanos.html" class="menu_lista_items_link">visitanos</a></li>
+			<li class="menu_lista_items"><a href="http://localhost/visitanos/" class="menu_lista_items_link">visitanos</a></li>
 		</ul>
 	</nav> 
 	<?php
