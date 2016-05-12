@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: Diseño de Interiores
+	Template Name: Gastronomía y Arte Culinario
  */
 
 //Advanced Custom Fields
@@ -44,7 +44,7 @@ get_header(); ?>
 		<div class="sectionCarrerasInfo-col2">
 			
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					<?php echo $parrafo1;?>
+					<?php echo $parrafo1;?> 
 				</p>
 				
 				<h4 class="sectionCarrerasInfo-col2_title">

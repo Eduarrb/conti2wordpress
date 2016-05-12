@@ -4,17 +4,23 @@
  */
 
 //Advanced Custom Fields
-
+$titulo_principal		=	get_field('titulo_principal');
+$index_video			=	get_field('video');
+$parrafo1				=	get_field('parrafo_1');
+$titulo1				=	get_field('titulo_1');
+$parrafo2				=	get_field('parrafo_2');
+$titulo2				=	get_field('titulo_2');
+$parrafo3				=	get_field('parrafo_3');
 
 get_header(); ?>
 	
 	<section class="sectionCarrerasInfo">
 		<div class="sectionCarrerasInfo-col1">
 			<h1 class="sectionCarrerasInfo-col1_titulo">
-				DISEÑO GRÁFICO
+				<?php echo $titulo_principal;?>
 			</h1>
 			<div class="sectionCarrerasInfo-col1-videoContenedor">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/sV2pbfGZjAg" frameborder="0" allowfullscreen></iframe>
+				<iframe <iframe src="<?php echo $index_video?>" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<form action="php/formInstituto.php" class="sectionCarrerasInfo-col1-formulario" role="form" method="post">
 				<!-- <div class="sectionCarrerasInfo-col1-formulario__tituloContenedor">
@@ -38,20 +44,20 @@ get_header(); ?>
 		<div class="sectionCarrerasInfo-col2">
 			
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					El Diseñador Grafico Continental, es un profesional diferente, altamente creativo, sensible y muy despierto a las tendencias, Crea y desarrolla el diseño de mensajes gráficos publicitarios para su realización en piezas impresas y multimedia, supervisando la producción de manera eficiente, considerando las necesidades de su cliente y sintonizando con las tendencias y requerimientos del mercado.
+					<?php echo $parrafo1;?> 
 				</p>
 				
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Mi campo laboral esta en:
+					<?php echo $titulo1;?> 
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Compañías de arte y diseño gráfico, agencias de publicidad y marketing, empresas de consultoría y asesoría especializadas en imagen institucional, departamentos de diseño gráfico de editoras, revistas, diarios y publicaciones diversas, áreas de diseño gráfico, editorial, publicitario, virtual y ambiental, empresas de pre-prensa digital, e incluso en su propia empresa de producción gráfica y publicitaria.
+					<?php echo $parrafo2;?>
 				</p>
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Lo que me hace diferente a los demás
+					<?php echo $titulo2;?> 
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					La Carrera de Diseñoz Gráfico es la ÚNICA Carrera Acreditada del Perú, lo cual garantiza la calidad en el proceso de aprendizaje con talleres especializados completamente equipados: Taller de Dibujo y maquetería, Taller de Fotografía, Taller de Producción audiovisual, Taller de Ilustración Digital (con tableros digitales para cada estudiante) y Laboratorios de cómputo con las características que el software de la carrera requiere.
+					<?php echo $parrafo3;?>
 				</p>
 			
 		</div>

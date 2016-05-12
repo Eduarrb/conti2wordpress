@@ -1,28 +1,22 @@
 <?php
 /*
-	Template Name: Diseño de Interiores
+	Template Name: Administración y Recursos Humanos
  */
 
 //Advanced Custom Fields
-$titulo_principal		=	get_field('titulo_principal');
-$index_video			=	get_field('video');
-$parrafo1				=	get_field('parrafo_1');
-$titulo1				=	get_field('titulo_1');
-$parrafo2				=	get_field('parrafo_2');
-$titulo2				=	get_field('titulo_2');
-$parrafo3				=	get_field('parrafo_3');
+
 
 get_header(); ?>
 	
 	<section class="sectionCarrerasInfo">
 		<div class="sectionCarrerasInfo-col1">
 			<h1 class="sectionCarrerasInfo-col1_titulo">
-				<?php echo $titulo_principal;?>
+				ADMINISTRACIÓN Y RECURSOS HUMANOS
 			</h1>
 			<div class="sectionCarrerasInfo-col1-videoContenedor">
-				<iframe src="<?php echo $index_video?>" frameborder="0" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/SCbvgRIdSqo" frameborder="0" allowfullscreen></iframe>
 			</div>
-			<form action="php/formInstituto.php" class="sectionCarrerasInfo-col1-formulario" role="form" method="post">
+			<form action="php/formUniversidad.php" class="sectionCarrerasInfo-col1-formulario" role="form" method="post">
 				<!-- <div class="sectionCarrerasInfo-col1-formulario__tituloContenedor">
 					<h4 class="sectionCarrerasInfo-col1-formulario__tituloContenedor__titulo">Solicita información</h4>
 				</div> -->
@@ -42,24 +36,25 @@ get_header(); ?>
 			</form>
 		</div>
 		<div class="sectionCarrerasInfo-col2">
-			
+			<h4 class="sectionCarrerasInfo-col2_title">
+					¿Por qué estudiar Administración y Recursos Humanos?
+				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					<?php echo $parrafo1;?>
+					Porque serás capaz de gestionar y maximizar el potencial y talento de los integrantes de la empresa u organización de manera integral.
+				</p>
+				<p class="sectionCarrerasInfo-col2_parrafo">
+					Algunas de tus responsabilidades serán la selección, formación y retención de personal para articular sus habilidades, inteligencia y creatividad con los objetivos organizacionales y corporativos. Tu rol será el de un líder que administra recursos e información orientados a optimizar el trabajo en equipo y mantener un clima organizacional idóneo.
 				</p>
 				
 				<h4 class="sectionCarrerasInfo-col2_title">
-					<?php echo $titulo1;?>
+					¿Por qué estudiar en la Universidad Continental?
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					<?php echo $parrafo2;?>
+					Porque contamos con un modelo académico fundamentado en la construcción de saberes en comunidades de aprendizaje presencial y virtual. Los métodos de caso diseñados para tu formación se cimentan en la enseñanza basada en la resolución de problemas y ejecución de proyectos.
 				</p>
-				<h4 class="sectionCarrerasInfo-col2_title">
-					<?php echo $titulo2;?>
-				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					<?php echo $parrafo3;?>
+					Nuestra moderna infraestructura te permitirá disponer de ambientes presenciales y virtuales donde aprenderás a aprovechar las tecnologías de la información y telecomunicaciones. El uso de los simuladores de negocios Markstrat y BOSS para las clases prácticas de gestión de recursos humanos desarrollará tus habilidades en la toma de decisiones a nivel estratégico, táctico y operativo.
 				</p>
-				
 		</div>
 	</section>
 

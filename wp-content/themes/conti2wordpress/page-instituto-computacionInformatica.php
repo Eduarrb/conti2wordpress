@@ -4,17 +4,23 @@
  */
 
 //Advanced Custom Fields
-
+$titulo_principal		=	get_field('titulo_principal');
+$index_video			=	get_field('video');
+$parrafo1				=	get_field('parrafo_1');
+$titulo1				=	get_field('titulo_1');
+$parrafo2				=	get_field('parrafo_2');
+$titulo2				=	get_field('titulo_2');
+$parrafo3				=	get_field('parrafo_3');
 
 get_header(); ?>
 	
 	<section class="sectionCarrerasInfo">
 		<div class="sectionCarrerasInfo-col1">
 			<h1 class="sectionCarrerasInfo-col1_titulo">
-				COMPUTACIÓN E INFORMÁTICA
+				<?php echo $titulo_principal;?>
 			</h1>
 			<div class="sectionCarrerasInfo-col1-videoContenedor">
-				<iframe width="560" height="315"src="https://www.youtube.com/embed/cm5qpqnxAa0" frameborder="0" allowfullscreen></iframe>
+				<iframe src="<?php echo $index_video?>" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<form action="php/formInstituto.php" class="sectionCarrerasInfo-col1-formulario" role="form" method="post">
 				<!-- <div class="sectionCarrerasInfo-col1-formulario__tituloContenedor">
@@ -38,20 +44,20 @@ get_header(); ?>
 		<div class="sectionCarrerasInfo-col2">
 			
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Es un profesional metódico y organizado, dirige y controla la gestión e implementación de los servicios en Tecnologías de la Información como base y soporte a los objetivos estratégicos de la organización.
+					<?php echo $parrafo1;?> 
 				</p>
 				
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Mi campo laboral esta en:
+					<?php echo $titulo1;?> 
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Empresas de desarrollo y consultoría en TI, Empresas especializadas en outsourcing de sistemas, Empresas especializadas en venta y representación de soluciones informáticas y Consultoría independiente en TI.
+					<?php echo $parrafo2;?> 
 				</p>
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Lo que me hace diferente a los demás
+					<?php echo $titulo2;?> 
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Contaré con la mejor tecnología: Laboratorios de cómputo, talleres de Hardware y Robótica.La Carrera de Computación e Informática es la Única Carrera Acreditada en el Perú. Además te brinda la oportunidad de obtener Certificaciones Internacionales que te colocarán a nivel de un profesional de talla internacional: Certificación de D-Link Technology Institute, D-Link Basic Certification –DBC y Certificación CISCO.
+					<?php echo $parrafo3;?> 
 				</p>
 				
 		</div>

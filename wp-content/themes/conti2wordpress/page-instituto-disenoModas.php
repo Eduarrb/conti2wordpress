@@ -4,16 +4,22 @@
  */
 
 //Advanced Custom Fields
-
+$titulo_principal		=	get_field('titulo_principal');
+$index_video			=	get_field('video');
+$parrafo1				=	get_field('parrafo_1');
+$titulo1				=	get_field('titulo_1');
+$parrafo2				=	get_field('parrafo_2');
+$titulo2				=	get_field('titulo_2');
+$parrafo3				=	get_field('parrafo_3');
 
 get_header(); ?>
 	<section class="sectionCarrerasInfo">
 		<div class="sectionCarrerasInfo-col1">
 			<h1 class="sectionCarrerasInfo-col1_titulo">
-				DISEÑO DE MODAS
+				<?php echo $titulo_principal;?>
 			</h1>
 			<div class="sectionCarrerasInfo-col1-videoContenedor">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/FFl_eNMekKU" frameborder="0" allowfullscreen></iframe>
+				<iframe src="<?php echo $index_video?>" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<form action="php/formInstituto.php" class="sectionCarrerasInfo-col1-formulario" role="form" method="post">
 				<!-- <div class="sectionCarrerasInfo-col1-formulario__tituloContenedor">
@@ -37,20 +43,20 @@ get_header(); ?>
 		<div class="sectionCarrerasInfo-col2">
 			
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					El diseñador de modas Continental crea, desarrolla y propone colecciones de Indumentaria, inspiradas en nuestra cultura aplicándolo a los diversos tipos de fibras que utilizan las empresas del sector textil de nuestra región que son muy apreciadas en el mercado global, con creatividad, destreza y responsabilidad.
+					<?php echo $parrafo1;?>
 				</p>
 				
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Mi campo laboral esta en:
+					<?php echo $titulo1;?>
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Áreas de diseño de las empresas del rubro, empresas consultoras de Imagen, su propia empresa como asesor Freelance en Diseño y/o Producción de prendas y accesorios, vestuarista, asesor de Vestuario, asesor de imagen, docente y/o investigador.
+					<?php echo $parrafo2;?>
 				</p>
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Lo que me hace diferente a los demás
+					<?php echo $titulo2;?>
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					La formación está en manos de profesionales de gran trayectoria a nivel Nacional e Internacional, la infraestructura y los talleres, de Patronaje, confección, fotografía, ilustración digital y tridimensional están diseñados para el dictado de las clases, con materiales y equipos de última tecnología.
+					<?php echo $parrafo3;?>
 				</p>
 				
 		</div>

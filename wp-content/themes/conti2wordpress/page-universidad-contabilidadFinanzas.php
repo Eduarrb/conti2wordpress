@@ -1,16 +1,15 @@
 <?php
 /*
-	Template Name: Diseño de Interiores
+	Template Name: Contabilidad y Finanzas
  */
 
 //Advanced Custom Fields
 $titulo_principal		=	get_field('titulo_principal');
-$index_video			=	get_field('video');
+$video					=	get_field('video');
 $parrafo1				=	get_field('parrafo_1');
 $titulo1				=	get_field('titulo_1');
 $parrafo2				=	get_field('parrafo_2');
 $titulo2				=	get_field('titulo_2');
-$parrafo3				=	get_field('parrafo_3');
 
 get_header(); ?>
 	
@@ -20,9 +19,9 @@ get_header(); ?>
 				<?php echo $titulo_principal;?>
 			</h1>
 			<div class="sectionCarrerasInfo-col1-videoContenedor">
-				<iframe src="<?php echo $index_video?>" frameborder="0" allowfullscreen></iframe>
+				<iframe src="<?php echo $video?>" frameborder="0" allowfullscreen></iframe>
 			</div>
-			<form action="php/formInstituto.php" class="sectionCarrerasInfo-col1-formulario" role="form" method="post">
+			<form action="php/formUniversidad.php" class="sectionCarrerasInfo-col1-formulario" role="form" method="post">
 				<!-- <div class="sectionCarrerasInfo-col1-formulario__tituloContenedor">
 					<h4 class="sectionCarrerasInfo-col1-formulario__tituloContenedor__titulo">Solicita información</h4>
 				</div> -->
@@ -42,24 +41,18 @@ get_header(); ?>
 			</form>
 		</div>
 		<div class="sectionCarrerasInfo-col2">
-			
-				<p class="sectionCarrerasInfo-col2_parrafo">
-					<?php echo $parrafo1;?>
+			<h4 class="sectionCarrerasInfo-col2_title">
+				<?php echo $titulo1;?>
+			</h4>
+			<p class="sectionCarrerasInfo-col2_parrafo">
+				<?php echo $parrafo1;?>
 				</p>
-				
-				<h4 class="sectionCarrerasInfo-col2_title">
-					<?php echo $titulo1;?>
-				</h4>
-				<p class="sectionCarrerasInfo-col2_parrafo">
-					<?php echo $parrafo2;?>
-				</p>
-				<h4 class="sectionCarrerasInfo-col2_title">
-					<?php echo $titulo2;?>
-				</h4>
-				<p class="sectionCarrerasInfo-col2_parrafo">
-					<?php echo $parrafo3;?>
-				</p>
-				
+			<h4 class="sectionCarrerasInfo-col2_title">
+				<?php echo $titulo2;?> 
+			</h4>
+			<p class="sectionCarrerasInfo-col2_parrafo">
+				<?php echo $parrafo2;?>
+			</p>
 		</div>
 	</section>
 

@@ -4,17 +4,23 @@
  */
 
 //Advanced Custom Fields
-
+$titulo_principal		=	get_field('titulo_principal');
+$index_video			=	get_field('video');
+$parrafo1				=	get_field('parrafo_1');
+$titulo1				=	get_field('titulo_1');
+$parrafo2				=	get_field('parrafo_2');
+$titulo2				=	get_field('titulo_2');
+$parrafo3				=	get_field('parrafo_3');
 
 get_header(); ?>
 	
 	<section class="sectionCarrerasInfo">
 		<div class="sectionCarrerasInfo-col1">
 			<h1 class="sectionCarrerasInfo-col1_titulo">
-				ADMINISTRACIÓN BANCARIA
+				<?php echo $titulo_principal;?>
 			</h1>
 			<div class="sectionCarrerasInfo-col1-videoContenedor">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/CNuUW_a7cWE" frameborder="0" allowfullscreen></iframe>
+				<iframe src="<?php echo $index_video?>" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<form action="php/formInstituto.php" class="sectionCarrerasInfo-col1-formulario" role="form" method="post">	
 			<!-- <div class="sectionCarrerasInfo-col1-formulario__tituloContenedor">
@@ -38,24 +44,22 @@ get_header(); ?>
 		<div class="sectionCarrerasInfo-col2">
 			
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Gestiona los productos y servicios bancarios y las actividades que se desarrollan dentro las plataformas, áreas de caja o tesorería para luego desempeñarse como un eficiente gestor financiero, asesor de negocios,administrador de una agencia financiera o bancaria. El administrador bancario Continental domina la operatividad de las aplicaciones informáticas en el sistema financiero, utiliza eficientemente los recursos y optimiza la relación con los 
+					<?php echo $parrafo1;?> 
 				</p>
 				
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Mi campo laboral esta en:
+					<?php echo $titulo1;?> 
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Bancos, Cooperativas de Ahorro y Crédito, ONGs, Cajas de Ahorro y Crédito (Rural, Municipal) y AFPs. Empresas comerciales, industriales, Instituciones Educativas, Organismos del sector público. Centros de investigación económica y social, organismos no gubernamentales (ONGs) y empresas de consultoría.
+					<?php echo $parrafo2;?> 
 				</p>
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Lo que me hace diferente a los demás
+					<?php echo $titulo2;?> 
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					La Carrera de Administración del Instituto continental es la ÚNICA que ostenta la acreditación del estado Peruano, lo que garantiza la calidad de sus procesos de enseñanza.
+					<?php echo $parrafo3;?> 
 				</p>
-				<p class="sectionCarrerasInfo-col2_parrafo">
-					Contaré con docentes que son actuales Gerentes y Funcionarios de las principales entidades financieras del país. (Banco de Crédito, Caja Arequipa, Financiera Confianza, BanBif, Edpyme Raíz e Interbank.)
-				</p>
+				
 		</div>
 	</section>
 

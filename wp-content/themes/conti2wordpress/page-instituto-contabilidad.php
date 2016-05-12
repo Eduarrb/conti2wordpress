@@ -5,16 +5,23 @@
 
 //Advanced Custom Fields
 
+$titulo_principal		=	get_field('titulo_principal');
+$index_video			=	get_field('video');
+$parrafo1				=	get_field('parrafo_1');
+$titulo1				=	get_field('titulo_1');
+$parrafo2				=	get_field('parrafo_2');
+$titulo2				=	get_field('titulo_2');
+$parrafo3				=	get_field('parrafo_3');
 
 get_header(); ?>
 	
 	<section class="sectionCarrerasInfo">
 		<div class="sectionCarrerasInfo-col1">
 			<h1 class="sectionCarrerasInfo-col1_titulo">
-				CONTABILIDAD
+				<?php echo $titulo_principal;?>
 			</h1>
 			<div class="sectionCarrerasInfo-col1-videoContenedor">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/dh4GhZZicmc" frameborder="0" allowfullscreen></iframe>
+				<iframe src="<?php echo $index_video?>" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<form action="php/formInstituto.php" class="sectionCarrerasInfo-col1-formulario" role="form" method="post">
 				<!-- <div class="sectionCarrerasInfo-col1-formulario__tituloContenedor">
@@ -38,23 +45,20 @@ get_header(); ?>
 		<div class="sectionCarrerasInfo-col2">
 			
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Realiza estudios cuantitativos y cualitativos de los ingresos y egresos económicos financieros. Actúa en los niveles de decisión de la organización. Identifica, previene y soluciona problemas que se presenta en el mundo de los negocios. Es un profesional de alto perfil, con alto espectro laboral, con formación técnica y analítica, para lograr una visión especifica de los procesos económicos de las empresas.
+					<?php echo $parrafo1;?> 
 				</p>
 				
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Mi campo laboral esta en:
+					<?php echo $titulo1;?> 
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Todo tipo de organizaciones comerciales, empresariales, de servicios y otros, pudiendo asumir cualquier reto de gestión económico contable, en costos industriales, de auditoría y de tributación.
+					<?php echo $parrafo2;?>
 				</p>
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Lo que me hace diferente a los demás
+					<?php echo $titulo2;?> 
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Plana docente, con experiencia en docencia, estudios de Post Grado y en actual ejercicio profesional, como asesores y consultores tributarios, contables y financieros.
-				</p>
-				<p class="sectionCarrerasInfo-col2_parrafo">
-					Accedo constantemente a laboratorios para los cursos de especialidad. Uso intensivo de software contable.
+					<?php echo $parrafo3;?> 
 				</p>
 		</div>
 	</section>

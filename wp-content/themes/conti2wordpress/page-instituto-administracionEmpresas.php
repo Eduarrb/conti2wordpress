@@ -4,17 +4,23 @@
  */
 
 //Advanced Custom Fields
-
+$titulo_principal		=	get_field('titulo_principal');
+$index_video			=	get_field('video');
+$parrafo1				=	get_field('parrafo_1');
+$titulo1				=	get_field('titulo_1');
+$parrafo2				=	get_field('parrafo_2');
+$titulo2				=	get_field('titulo_2');
+$parrafo3				=	get_field('parrafo_3');
 
 get_header(); ?>
 	
 	<section class="sectionCarrerasInfo">
 		<div class="sectionCarrerasInfo-col1">
 			<h1 class="sectionCarrerasInfo-col1_titulo">
-				ADMINISTRACIÓN DE EMPRESAS
+				<?php echo $titulo_principal;?>
 			</h1>
 			<div class="sectionCarrerasInfo-col1-videoContenedor">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/gium6S68rPA" frameborder="0" allowfullscreen></iframe>
+				<iframe src="<?php echo $index_video?>" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<form action="php/formInstituto.php" class="sectionCarrerasInfo-col1-formulario" role="form" method="post">
 				<!-- <div class="sectionCarrerasInfo-col1-formulario__tituloContenedor">
@@ -38,23 +44,20 @@ get_header(); ?>
 		<div class="sectionCarrerasInfo-col2">
 			
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Crea, pone en marcha y administra en forma exitosa los recursos humanos, financieros y la comercialización de productos y/o servicios de la empresa, supervisa la logística, el manejo de almacén y los métodos de organización, según los criterios de eficiencia y calidad, con iniciativa y espíritu emprendedor. El Administrador continental, está en capacidad de realizar su propio emprendimiento e implementar con éxito su propia empresa, convirtiéndose en fuente de desarrollo económico y empleabilidad.
+					<?php echo $parrafo1;?> 
 				</p>
 				
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Mi campo laboral esta en:
+					<?php echo $titulo1;?> 
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					Empresas de los diversos sectores (minero, agropecuario, industrial, financiero, comercio exterior y servicios). Su propia empresa.
+					<?php echo $parrafo2;?>
 				</p>
 				<h4 class="sectionCarrerasInfo-col2_title">
-					Lo que me hace diferente a los demás
+					<?php echo $titulo2;?>
 				</h4>
 				<p class="sectionCarrerasInfo-col2_parrafo">
-					La Carrera de Administración del Instituto continental es la ÚNICA que ostenta la acreditación del estado Peruano, lo que garantiza la calidad de sus procesos de enseñanza
-				</p>
-				<p class="sectionCarrerasInfo-col2_parrafo">
-					Nuestros docentes son profesionales en ejercicio, que garantizan el proceso enseñanza-aprendizaje, donde le práctica está garantizada en más de un 70%. Son asesores, consultores y emprendedores de reconocido éxito regional y nacional.
+					<?php echo $parrafo3;?> 
 				</p>
 		</div>
 	</section>

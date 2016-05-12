@@ -96,7 +96,7 @@ get_header();?>
 						<figure class="sectionInstituto-carreras__escuela__contenedorDerecha__col__frame">
 							<img src="<?php bloginfo('stylesheet_directory') ?> /assets/imagenes/gastronomia2.png" alt="Gastronomía2" class="sectionInstituto-carreras__escuela__contenedorDerecha__col__frame__img">
 						</figure>
-						<a href="instituto/gastronomia.html" class="sectionInstituto-carreras__escuela__contenedorDerecha__col__link">Gastronomía y Arte Culinario</a>
+						<a href="http://localhost/instituto/gastronomia-y-arte-culinario/" class="sectionInstituto-carreras__escuela__contenedorDerecha__col__link">Gastronomía y Arte Culinario</a>
 					</div>
 					<div class="sectionInstituto-carreras__escuela__contenedorDerecha__col">
 						<figure class="sectionInstituto-carreras__escuela__contenedorDerecha__col__frame">
