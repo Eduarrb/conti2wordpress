@@ -19,7 +19,7 @@ get_header(); ?>
 		</article>
 		<article class="sectionIndex-video">
 			<figure class="sectionIndex-video-contenedor">
-				<img src="<?php bloginfo('stylesheet_directory') ?> /assets/imagenes/iphone6.png" alt="" class="sectionIndex-video-contenedor_img">
+				<img src="<?php bloginfo('stylesheet_directory');?>/assets/imagenes/iphone6.png" alt="" class="sectionIndex-video-contenedor_img">
 			</figure>
 			<div class="sectionIndex-video_caja">
 				<div class="sectionIndex-video_caja_youtube">
@@ -31,18 +31,18 @@ get_header(); ?>
 			<div class="sectionIndex-enlaces_carreras">
 				<figure class="sectionIndex-enlaces_carreras_contenedor">
 					<a href="universidad.html" class="sectionIndex-enlaces_carreras_contenedor_link">
-						<img src="<?php bloginfo('stylesheet_directory') ?> /assets/imagenes/instituto-nube.png" alt="" class="sectionIndex-enlaces_carreras_contenedor_link_img">
+						<img src="<?php bloginfo('stylesheet_directory');?>/assets/imagenes/instituto-nube.png" alt="" class="sectionIndex-enlaces_carreras_contenedor_link_img">
 					</a>
 				</figure>
 				<figure class="sectionIndex-enlaces_carreras_contenedor">
 					<a href="instituto.html" class="sectionIndex-enlaces_carreras_contenedor_link">
-						<img src="<?php bloginfo('stylesheet_directory') ?> /assets/imagenes/universidad-nube.png" alt="" class="sectionIndex-enlaces_carreras_contenedor_link_img">
+						<img src="<?php bloginfo('stylesheet_directory');?>/assets/imagenes/universidad-nube.png" alt="" class="sectionIndex-enlaces_carreras_contenedor_link_img">
 					</a>
 				</figure>
 			</div>
 			<div class="sectionIndex-enlaces_joven">
 				<figure class="sectionIndex-enlaces_joven_contenedor">
-					<img src="<?php bloginfo('stylesheet_directory') ?> /assets/imagenes/Enzo1.png" alt="" class="sectionIndex-enlaces_joven_contenedor_img">
+					<img src="<?php bloginfo('stylesheet_directory');?>/assets/imagenes/Enzo1.png" alt="" class="sectionIndex-enlaces_joven_contenedor_img">
 				</figure>
 			</div>
 		</article>

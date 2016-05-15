@@ -1,0 +1,75 @@
+********************************************************************************
+PACKAGE-LOG: 2016-05-13 14:14:14
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.1.6
+WORDPRESS:	4.5
+PHP INFO:	7.0.0 | SAPI: apache2handler
+SERVER:		Apache/2.2.27 (Win32) DAV/2 mod_ssl/2.2.27 OpenSSL/1.0.2e mod_fcgid/2.3.9 mod_wsgi/3.4 Python/2.7.6 PHP/7.0.0 mod_perl/2.0.8 Perl/v5.16.3 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 5000M (128M default) 
+MEMORY STACK: 2MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:13 | filtered:0 | create:13 
+FILTERED: [] 
+SQL CREATED: 20160513_elcoleyafue_5735e110809432783160513141336_database.sql 
+SQL FILE SIZE: 1.27MB (1327637) 
+SQL FILE TIME: 2016-05-13 14:14:14 
+SQL RUNTIME: 0.09 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  C:/Users/dj_sh/Documents/GitHub/conti2wordpress 
+ARCHIVE FILE: 20160513_elcoleyafue_5735e110809432783160513141336_archive.zip 
+FILTERS: *OFF* 
+DIRS:  not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	98.4MB 
+STATS:	Dirs 557 | Files 5,432 
+SQL ADDED: 20160513_elcoleyafue_5735e110809432783160513141336_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 5989
+    [filename] => C:\Users\dj_sh\Documents\GitHub\conti2wordpress\wp-snapshots\tmp\20160513_elcoleyafue_5735e110809432783160513141336_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 67.05MB 
+ARCHIVE RUNTIME: 22.50 sec. 
+MEMORY STACK: 4MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+Template parsed with new data 
+Complete [C:/Users/dj_sh/Documents/GitHub/conti2wordpress/wp-snapshots/tmp/20160513_elcoleyafue_5735e110809432783160513141336_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 1.27MB 
+Installer File: 319.28KB 
+Archive File: 67.05MB  
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 23.50 sec.
+PEAK PHP MEMORY USED: 6MB
+DONE PROCESSING => 20160513_elcoleyafue 2016-05-13 14:14:38
+ 
