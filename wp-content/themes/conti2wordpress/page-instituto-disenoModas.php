@@ -21,24 +21,9 @@ get_header(); ?>
 			<div class="sectionCarrerasInfo-col1-videoContenedor">
 				<iframe src="<?php echo $index_video?>" frameborder="0" allowfullscreen></iframe>
 			</div>
-			<form action="php/formInstituto.php" class="sectionCarrerasInfo-col1-formulario" role="form" method="post">
-				<!-- <div class="sectionCarrerasInfo-col1-formulario__tituloContenedor">
-					<h4 class="sectionCarrerasInfo-col1-formulario__tituloContenedor__titulo">Solicita información</h4>
-				</div> -->
-				<div class="sectionCarrerasInfo-col1-formulario__bloque1">
-					<input type="text" class="sectionCarrerasInfo-col1-formulario__bloque1__input" name="name" id="name" placeholder="NOMBRE" required>
-					<input type="email" class="sectionCarrerasInfo-col1-formulario__bloque1__input" name="email" id="email" placeholder="EMAIL" required>
-					<input type="text" class="sectionCarrerasInfo-col1-formulario__bloque1__input" name="city" id="city" placeholder="CIUDAD" required>
-				</div>
-				<div class="sectionCarrerasInfo-col1-formulario__bloque2">
-					<input type="text" class="sectionCarrerasInfo-col1-formulario__bloque2__input" name="apellido" id="apellido" placeholder="APELLIDO" required>
-					<input type="text" class="sectionCarrerasInfo-col1-formulario__bloque2__input" name="mobile" id="mobile" placeholder="CELULAR" maxlength="9" pattern="[0-9]{9}"  required>
-				</div>
-				<div class="sectionCarrerasInfo-col1-formulario__bloque3">
-					<textarea name="message" id="message" cols="60" rows="10" class="sectionCarrerasInfo-col1-formulario__bloque3__textarea" placeholder="ESCRIBE TUS CONSULTAS" required></textarea>
-				</div>
-				<button type="submit" value=" Send" class="sectionCarrerasInfo-col1-formulario__btn" id="submit">INSCRIBETE</button>
-			</form>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php the_content(); ?>
+			<?php endwhile; ?>
 		</div>
 		<div class="sectionCarrerasInfo-col2">
 			

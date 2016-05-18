@@ -26,7 +26,7 @@ if (@mail($email_to, $asunto ,$contenido ,$cabeceras ))
 	//Si el mensaje se envía muestra una confirmación
 	echo "<script languaje='javascript'>
             alert('Mensaje enviado, gracias.');
-            window.location.href = 'http://pruebaconti.esy.es/';
+            window.location.href = 'http://pruebaconti.eduardoarroyob.com/';
             </script>";
 }
 else{

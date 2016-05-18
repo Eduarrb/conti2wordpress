@@ -13,9 +13,8 @@
 $cabeceras = "From: $email\n" //La persona que envia el correo
  . "Reply-To: $email\n";
 $asunto = "Solicita información UNIVERSIDAD"; //asunto aparecera en la bandeja del servidor de correo
-$email_to = "Introdusca el correo destinatario"; //cambiar por tu email
+$email_to = "dj.shadowjeab@gmail.com"; //cambiar por tu email
 $contenido = "$nombre ha enviado un mensaje\n\n"
-
 . "Nombre y Apellido: $nombre $apellido\n"
 . "Email: $email\n"
 . "Telefono: $mobil\n"
@@ -28,7 +27,7 @@ if (@mail($email_to, $asunto ,$contenido ,$cabeceras ))
 	//Si el mensaje se envía muestra una confirmación
 	echo "<script languaje='javascript'>
             alert('Mensaje enviado, gracias.');
-            window.location.href = 'http://pruebaconti.esy.es/';
+            window.location.href = 'http://pruebaconti.eduardoarroyob.com/';
             </script>";
 }
 else{

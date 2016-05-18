@@ -38,7 +38,7 @@
 		<div class="header-contenedor">
 			<div class="header-contenedor-raw1">
 				<figure class="header-contenedor-raw1_logo">
-					<a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo('stylesheet_directory');?>/assets/imagenes/logo.png" alt="" class="header-contenedor-raw1_logo_img"></a>
+					<a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('stylesheet_directory');?>/assets/imagenes/logo.png" alt="" class="header-contenedor-raw1_logo_img"></a>
 					
 				</figure>
 				<div class="header-contenedor-raw1_redes">
@@ -59,20 +59,20 @@
 				<a href="#" class="menu_lista_items_link">Carreras <span class="icon-chevron-down"></span>
 				</a>
 				<ul class="children1">
-					<li style=""><a href="<?php bloginfo('url'); ?>/instituto/" onMouseOver="this.style.background='#0160a7'"onMouseOut="this.style.background='#0080e0'">INSTITUTO</a></li>
+					<li style=""><a href="<?php bloginfo('url');?>/instituto/" onMouseOver="this.style.background='#0160a7'"onMouseOut="this.style.background='#0080e0'">INSTITUTO</a></li>
 					<li class="submenu2">
 						<a href="#" onMouseOver="this.style.background='#0160a7'"onMouseOut="this.style.background='#0080e0'">UNIVERSIDAD<span class="icon-chevron-down"></span></a>
 						<ul class="children2">
-							<li onMouseOver="this.style.background='#0160a7'"onMouseOut="this.style.background='#00ace7'"><a href="<?php bloginfo('url'); ?>/universidad/" >HUANCAYO</a></li>
+							<li onMouseOver="this.style.background='#0160a7'"onMouseOut="this.style.background='#00ace7'"><a href="<?php bloginfo('url');?>/universidad/" >HUANCAYO</a></li>
 							<!-- <li onMouseOver="this.style.background='#0160a7'"onMouseOut="this.style.background='#00ace7'"><a href="uniArequipa.html" >AREQUIPA</a></li> -->
 						</ul>
 					</li>
 				</ul>
 			</li>
-			<li class="menu_lista_items"><a href="<?php bloginfo('url'); ?>/descubre-tus-talentos/" class="menu_lista_items_link">descubre tus talentos</a></li>
-			<li class="menu_lista_items"><a href="<?php bloginfo('url'); ?>/admision/" class="menu_lista_items_link">admisión</a></li>
-			<li class="menu_lista_items"><a href=" <?php bloginfo('url'); ?>/events/" class="menu_lista_items_link">agenda</a></li>
-			<li class="menu_lista_items"><a href="<?php bloginfo('url'); ?>/visitanos/" class="menu_lista_items_link">visitanos</a></li>
+			<li class="menu_lista_items"><a href="<?php bloginfo('url');?>/descubre-tus-talentos/" class="menu_lista_items_link">descubre tus talentos</a></li>
+			<li class="menu_lista_items"><a href="<?php bloginfo('url');?>/admision/" class="menu_lista_items_link">admisión</a></li>
+			<li class="menu_lista_items"><a href=" <?php bloginfo('url');?>/events/" class="menu_lista_items_link">agenda</a></li>
+			<li class="menu_lista_items"><a href="<?php bloginfo('url');?>/visitanos/" class="menu_lista_items_link">visitanos</a></li>
 		</ul>
 	</nav> 
 	<?php

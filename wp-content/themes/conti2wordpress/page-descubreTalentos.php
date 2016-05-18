@@ -9,10 +9,10 @@ get_header();?>
 	<section class="sectionDescubreTalentos">
 		<div class="sectionDescubreTalentos-col1">
 			<figure class="sectionDescubreTalentos-col1_titulo">
-				<img src="<?php bloginfo('stylesheet_directory') ?>/assets/imagenes/descubre.png" alt="descubre" class="sectionDescubreTalentos-col1_titulo_img">
+				<img src="<?php bloginfo('stylesheet_directory');?>/assets/imagenes/descubre.png" alt="descubre" class="sectionDescubreTalentos-col1_titulo_img">
 			</figure>
 			<figure class="sectionDescubreTalentos-col1_saory">
-				<img src="<?php bloginfo('stylesheet_directory') ?>/assets/imagenes/saory2.png" alt="Saory" class="sectionDescubreTalentos-col1_saory_img">
+				<img src="<?php bloginfo('stylesheet_directory');?>/assets/imagenes/saory2.png" alt="Saory" class="sectionDescubreTalentos-col1_saory_img">
 			</figure>
 		</div>
 		<div class="sectionDescubreTalentos-col2">

@@ -926,7 +926,8 @@ body {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  font-family: Avenir light;
+  font-family: Avenir Heavy;
+  font-size: 11px;
   margin-top: 20px;
   display: -webkit-box;
   display: -moz-box;
@@ -943,10 +944,16 @@ body {
   padding-bottom: 45px;
   position: relative;
 }
+.sectionIndex-cont-formulario p{
+	margin: 0;
+}
 .sectionIndex-cont-formulario__tituloContenedor {
   margin-top: 10px;
   margin-left: 30px;
   width: 100%;
+}
+.sectionIndex-cont-formulario__tituloContenedor p {
+  display: none;
 }
 .sectionIndex-cont-formulario__tituloContenedor__titulo {
   margin: 0;
@@ -954,10 +961,13 @@ body {
   padding: 10px 0 20px 0;
   font-size: 14px;
 }
+.sectionIndex-cont-formulario__bloque1 p{
+	margin: 0;
+}
 .sectionIndex-cont-formulario__bloque1,
 .sectionIndex-cont-formulario__bloque2 {
   width: 50%;
-  font-size: 8.97px;
+  /*font-size: 8.97px;*/
 }
 .sectionIndex-cont-formulario__bloque1__input,
 .sectionIndex-cont-formulario__bloque2__input {
@@ -989,7 +999,10 @@ body {
 .sectionIndex-cont-formulario__bloque3 {
   width: 100%;
   margin-bottom: 15px;
-  font-size: 8.97px;
+  /*font-size: 8.97px;*/
+}
+.sectionIndex-cont-formulario__bloque3 p{
+	margin: 0;
 }
 .sectionIndex-cont-formulario__bloque3__textarea {
   -webkit-border-radius: 8px;
@@ -1856,6 +1869,10 @@ body {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
+
+.sectionCarrerasInfo-col1-formulario p{
+	margin: 0;
+}
 .sectionCarrerasInfo-col1-formulario__tituloContenedor {
   margin-top: 10px;
   margin-left: 30px;
@@ -1870,6 +1887,12 @@ body {
 .sectionCarrerasInfo-col1-formulario__bloque1,
 .sectionCarrerasInfo-col1-formulario__bloque2 {
   width: 50%;
+}
+
+.sectionCarrerasInfo-col1-formulario__bloque1 p,
+.sectionCarrerasInfo-col1-formulario__bloque2 p,
+.sectionCarrerasInfo-col1-formulario__bloque3 p{
+	margin: 0;
 }
 .sectionCarrerasInfo-col1-formulario__bloque1__input,
 .sectionCarrerasInfo-col1-formulario__bloque2__input {

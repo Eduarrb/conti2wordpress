@@ -2,6 +2,9 @@
 // $('.menu-item a').addClass('menu_lista_items_link');
 // $('ul .sub-menu').addClass('sub-menu');
 // $('ul .sub-menu').removeClass('sub-menu');
+$('#wpcf7-f172-p8-o1 .wpcf7-form').addClass('sectionIndex-cont-formulario');
+$('#wpcf7-f121-p18-o1 .wpcf7-form').addClass('sectionCarrerasInfo-col1-formulario');
+$('#wpcf7-f136-p118-o1 .wpcf7-form').addClass('sectionCarrerasInfo-col1-formulario');
 $('.tribe-clearfix').prepend('<img/>');
 $(".tribe-clearfix img").addClass('imgCalendar');
 $(".imgCalendar").attr("src","../wp-content/themes/conti2wordpress/assets/imagenes/agenda.png");

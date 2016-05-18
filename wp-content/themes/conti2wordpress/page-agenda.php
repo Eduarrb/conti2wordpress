@@ -6,7 +6,7 @@
 get_header();?>
 	<section class="sectionAgenda">
 		<figure class="sectionAgenda-agendaLogo">
-			<img src="<?php bloginfo('stylesheet_directory') ?>/assets/imagenes/agenda.png" alt="" class="sectionAgenda-agendaLogo__img">
+			<img src="<?php bloginfo('stylesheet_directory');?>/assets/imagenes/agenda.png" alt="" class="sectionAgenda-agendaLogo__img">
 		</figure>
 		<!-- <figure class="sectionAgenda-calendarioLogo">
 			<img src="imagenes/calendario.png" alt="" class="sectionAgenda-calendarioLogo__img">
